@@ -1,2 +1,2 @@
 # Vite-Portfolio
- Portfolio web application written with Vite, ReactJs and TailwindCSS
+ Portfolio web application written with Vite, ReactJS and TailwindCSS
