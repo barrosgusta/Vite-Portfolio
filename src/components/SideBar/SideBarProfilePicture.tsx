@@ -14,7 +14,7 @@ export function SideBarProfilePicture() {
     }
 
     return (
-        <div className="rounded-xl w-40 h-40 border border-slate-500 bg-zinc-800 m-5 shadow-default hover:shadow-slate-950 hover:bg-white transition-all delay-100" >
+        <div className="rounded-xl w-40 h-40 border border-zinc-500 bg-zinc-800 m-5 shadow-default hover:bg-white transition-all delay-75" >
             <img src={isHovering ? HoverProfileImage : ProfileImage} 
             alt="Profile Picture" 
             className="flex items-center justify-center text-white text-xs text-center h-full"

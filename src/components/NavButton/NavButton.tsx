@@ -9,7 +9,7 @@ export function NavButton({text, zIndex, paddingRight, onClick}: NavButtonProps)
     return (
         <button 
             onClick={onClick} 
-            className= "absolute font-semibold bg-zinc-900 text-slate-300 border-s-2 rounded-es-xl rounded-se-xl py-1 px-4 transition-all delay-75 hover:bg-zinc-800 hover:text-slate-200 hover:border-slate-500 hover:shadow-default hover:shadow-slate-950" 
+            className= "absolute text-lg font-semibold bg-zinc-200 text-zinc-600 border-s-2 border-zinc-50 rounded-es-xl rounded-se-xl py-1 px-4 transition-all delay-75 hover:bg-zinc-100 hover:text-slate-900 hover:border-slate-200" 
             style={{zIndex: zIndex, paddingRight: paddingRight}}
         >{text}
         </button>

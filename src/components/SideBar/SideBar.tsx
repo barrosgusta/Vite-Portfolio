@@ -1,16 +1,18 @@
+import { Pi } from "lucide-react";
+import { PillSeparator } from "../PillSeparator";
 import { SideBarInfo } from "./SideBarInfo";
 import { SideBarProfilePicture } from "./SideBarProfilePicture";
 
 export function SideBar() {
     return (
-        <div className="rounded-xl bg-zinc-800 p-4 grid place-items-center border border-slate-400 shadow-default shadow-slate-950">
+        <div className="rounded-xl bg-zinc-100 h-fit p-4 grid place-items-center border border-zinc-400 shadow-default">
             <SideBarProfilePicture />
-            <h1 className="text-white text-xl text-center font-bold ">Gustavo Barros da Silveira</h1>
-            <div className="border border-slate-500 w-24 h-0 my-2"></div>
+            <h1 className="text-zinc-600 text-xl text-center font-bold ">Gustavo Barros da Silveira</h1>
+            <PillSeparator />
             <div className="grid place-items-center">
                 <SideBarInfo />
-            <div className="border border-slate-500 w-24 h-0 my-2"></div>
             </div>
+            <PillSeparator />
         </div>
     )
 }
