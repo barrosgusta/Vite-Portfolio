@@ -6,7 +6,7 @@ import { PillSeparator } from "../PillSeparator.tsx";
 
 export function MainForm() {
     return (
-        <div className="rounded-xl flex flex-col border border-zinc-400 bg-zinc-100 shadow-default" >
+        <div className="backdrop-blur-2xl z-10 rounded-xl bg-zinc-100 bg-opacity-60 flex flex-col border border-zinc-400 shadow-default" >
             <div className="flex justify-end ">
                 <NavButton text = "Eu" zIndex={1} paddingRight={310} />
                 <NavButton text = "Experiência" zIndex={2} paddingRight={195}/>
