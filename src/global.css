@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'SF Pro Display, sans-serif' ;
+    font-family: 'SF Pro Display' ;
     src: url('./assets/fonts/SFPRODISPLAYREGULAR.OTF') format('opentype');
 }
 
 * {
-    font-family: 'SF Pro Display, sans-serif' ;
+    font-family: 'SF Pro Display', sans-serif;
 }

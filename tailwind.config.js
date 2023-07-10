@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      screens : {
+        dark: { raw: '(prefers-color-scheme: dark)' },
+      },
       boxShadow: {
         'default': '0 0px 8px 0px rgb(0, 0, 0, 0.4)',
       }

@@ -1,13 +1,13 @@
+import { Background } from "./components/Background"
 import { MainForm } from "./components/MainForm/MainForm"
 import { SideBar } from "./components/SideBar/SideBar"
-import Background from './assets/images/bg.svg'
 
 function App() {
   return (
     <>
-      <img src={Background} alt="Background image" className="bg-cover fixed w-screen top-0" />
+      <Background />
 
-      <div className="flex flex-row justify-center m-20 gap-9">
+      <div className="flex flex-row justify-center m-20 gap-9 transition-all duration-75">
         <SideBar />
         <MainForm />
       </div>
