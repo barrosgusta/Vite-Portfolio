@@ -1,5 +1,6 @@
 import { Background } from "./components/Background"
 import { MainForm } from "./components/MainForm/MainForm"
+import { NavBarBottom } from "./components/NavBar/NavBarBottom"
 import { SideBar } from "./components/SideBar/SideBar"
 
 function App() {
@@ -7,10 +8,12 @@ function App() {
     <>
       <Background />
 
-      <div className="flex flex-row justify-center m-20 gap-9 transition-all duration-75">
+      <div className="flex flex-col lg:flex-row justify-center m-40 mt-20 gap-9 transition-all duration-75">
         <SideBar />
         <MainForm />
       </div>
+
+      <NavBarBottom />
     </>
   )
 }

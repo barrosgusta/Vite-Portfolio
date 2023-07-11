@@ -18,7 +18,7 @@ export function SideBarInfo() {
             <div className="flex flex-col justify-center items-start">
                 <div className="grid grid-flow-col place-items-center">
                     <IconFrame icon={<FontAwesomeIcon icon={faMailBulk} />} />
-                    <span className="text-zinc-600 dark:text-zinc-300 dark:text-zinc-300 text-xs text-left justify-center">
+                    <span className="text-zinc-600 dark:text-zinc-300 text-xs text-left justify-center drop-shadow-sm">
                         E-Mail: guga082011@gmail.com
                     </span>
                 </div>
@@ -27,12 +27,12 @@ export function SideBarInfo() {
                     <IconFrame
                         icon={<FontAwesomeIcon icon={faMapLocation} />}
                     />
-                    <span className="text-zinc-600 dark:text-zinc-300 text-xs text-left justify-center">
+                    <span className="text-zinc-600 dark:text-zinc-300 text-xs text-left justify-center drop-shadow-sm">
                         Rio do Sul - SC
                     </span>
                 </div>
 
-                <div className="grid grid-flow-col place-items-center">
+                <div className="grid grid-flow-col place-items-center drop-shadow-sm">
                     <IconFrame icon={<FontAwesomeIcon icon={faMobile} />} />
                     <span className="text-zinc-600 dark:text-zinc-300 text-xs text-left justify-center">
                         +55 (49) 9 999910202
