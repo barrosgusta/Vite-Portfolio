@@ -8,7 +8,7 @@ function App() {
     <>
       <Background />
 
-      <div className="flex flex-col lg:flex-row justify-center m-40 mt-20 gap-9 transition-all duration-75">
+      <div className="flex flex-col lg:flex-row justify-center m-40 mt-20 gap-9 transition-all duration-75 font-sfp">
         <SideBar />
         <MainForm />
       </div>

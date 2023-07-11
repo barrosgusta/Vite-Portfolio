@@ -7,6 +7,22 @@
     src: url('./assets/fonts/SFPRODISPLAYREGULAR.OTF') format('opentype');
 }
 
-* {
-    font-family: 'SF Pro Display', sans-serif;
+@font-face {
+    font-family: 'SF Pro Display Bold' ;
+    src: url('./assets/fonts/SFPRODISPLAYBOLD.OTF') format('opentype');
+}
+
+@font-face {
+    font-family: 'SF Pro Display Medium' ;
+    src: url('./assets/fonts/SFPRODISPLAYMEDIUM.OTF') format('opentype');
+}
+
+@font-face {
+    font-family: 'SF Pro Display Thin Italic' ;
+    src: url('./assets/fonts/SFPRODISPLAYTHINITALIC.OTF') format('opentype');
+}
+
+@font-face {
+    font-family: 'SF Pro Display Ultra Thin Italic' ;
+    src: url('./assets/fonts/SFPRODISPLAYULTRALIGHTITALIC.OTF') format('opentype');
 }

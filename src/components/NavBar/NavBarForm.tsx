@@ -27,7 +27,7 @@ function CustomLink({to, children}) {
     const isActive = useMatch({path: resolvedPath.pathname, end: true})
     const additionClasses = " p-3 text-xl font-semibold hover:text-indigo-500 transition-all duration-400"
     return (
-        <Link to={to} className={isActive ? "text-indigo-400" + additionClasses : "text-zinc-600" + additionClasses}>
+        <Link to={to} className={isActive ? "text-indigo-400" + additionClasses : "text-zinc-700 dark:text-zinc-300" + additionClasses}>
             {children}
         </Link>
     )

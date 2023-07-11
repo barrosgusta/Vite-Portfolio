@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { PillSeparator } from "../../PillSeparator";
 import { TextBox } from "../../TextBox";
 
-export function ContatoContent() {
+export function ContactContent() {
     return (
         <>
         <div className="text-justify m-7">

@@ -1,9 +1,5 @@
-import { EuContent } from './content/EuContent';
-import { CurriculoContent } from './content/CurriculoContent';
-import { ContatoContent } from './content/ContatoContent';
-import { PortfolioContent } from './content/PortfolioContent';
-import { Route, Routes } from 'react-router-dom';
 import { NavBarForm } from '../NavBar/NavBarForm';
+import { AnimatedRoutes } from './AnimatedRoutes';
 
 export function MainForm() {
     return (
@@ -12,13 +8,7 @@ export function MainForm() {
             <div className='absolute right-0'>
                 <NavBarForm />
             </div>
-            <Routes>
-                <Route path="/" element={<EuContent />} />
-                <Route path="/me" element={<EuContent />} />
-                <Route path="/resume" element={<CurriculoContent />} />
-                <Route path="/portfolio" element={<PortfolioContent />} />
-                <Route path="/contact" element={<ContatoContent />} />
-            </Routes>
+            <AnimatedRoutes />
         </div>
     );
 }

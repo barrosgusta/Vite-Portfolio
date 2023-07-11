@@ -1,40 +1,37 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconFrame } from '../IconFrame/IconFrame';
 import {
-    faMailBulk,
-    faMapLocation,
-    faMobile,
-} from '@fortawesome/free-solid-svg-icons';
-import {
     faInstagram,
     faLinkedin,
     faTwitter,
 } from '@fortawesome/free-brands-svg-icons';
 import { PillSeparator } from '../PillSeparator';
+import { Mail, MapPin, PhoneIcon } from 'lucide-react';
 
 export function SideBarInfo() {
     return (
         <div className="grid place-items-center">
             <div className="flex flex-col justify-center items-start">
                 <div className="grid grid-flow-col place-items-center">
-                    <IconFrame icon={<FontAwesomeIcon icon={faMailBulk} />} />
-                    <span className="text-zinc-600 dark:text-zinc-300 text-xs text-left justify-center drop-shadow-sm">
+                    
+                    <IconFrame icon={<Mail />} />
+                    <span className="text-zinc-700 dark:text-zinc-300 text-xs text-left justify-center">
                         E-Mail: guga082011@gmail.com
                     </span>
                 </div>
 
                 <div className="grid grid-flow-col place-items-center">
                     <IconFrame
-                        icon={<FontAwesomeIcon icon={faMapLocation} />}
+                        icon={<MapPin />}
                     />
-                    <span className="text-zinc-600 dark:text-zinc-300 text-xs text-left justify-center drop-shadow-sm">
+                    <span className="text-zinc-700 dark:text-zinc-300 text-xs text-left justify-center">
                         Rio do Sul - SC
                     </span>
                 </div>
 
-                <div className="grid grid-flow-col place-items-center drop-shadow-sm">
-                    <IconFrame icon={<FontAwesomeIcon icon={faMobile} />} />
-                    <span className="text-zinc-600 dark:text-zinc-300 text-xs text-left justify-center">
+                <div className="grid grid-flow-col place-items-center">
+                    <IconFrame icon={<PhoneIcon />} />
+                    <span className="text-zinc-700 dark:text-zinc-300 text-xs text-left justify-center">
                         +55 (49) 9 999910202
                     </span>
                 </div>
