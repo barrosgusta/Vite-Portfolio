@@ -22,7 +22,7 @@ export function NavBarForm() {
     )
 }
 
-function CustomLink({to, children}) {
+function CustomLink({to = '', children = ''}) {
     const resolvedPath = useResolvedPath(to)
     const isActive = useMatch({path: resolvedPath.pathname, end: true})
     const additionClasses = " p-3 text-xl font-semibold hover:text-indigo-500 transition-all duration-400"

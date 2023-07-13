@@ -1,4 +1,4 @@
-import { faBook, faSuitcase, faUser } from "@fortawesome/free-solid-svg-icons";
+import { faBook, faSuitcase } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { PillSeparator } from "../../PillSeparator";
 import { IconFrame } from "../../IconFrame/IconFrame";

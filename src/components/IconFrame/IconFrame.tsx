@@ -6,7 +6,7 @@ interface IconFrameProps {
   href?: string
 }
 
-export function IconFrame({icon, isSmall = false, href}: IconFrameProps) {
+export function IconFrame({icon, isSmall = false, href = ''}: IconFrameProps) {
   const HandleLinkClick = (url : string) => {
     window.open(url, "_blank")
   };
