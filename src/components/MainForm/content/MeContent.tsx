@@ -10,6 +10,7 @@ export function MeContent() {
         <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
         >
         <div className="text-justify m-7">
             <div className="grid place-content-start">
@@ -17,14 +18,14 @@ export function MeContent() {
                     <h1 className="text-zinc-800 dark:text-zinc-100 text-3xl font-sfpbold">
                         Eu
                     </h1>
-                    <PillSeparator additionaTailwindClasses="my-3" />
+                    <PillSeparator additionalTailwindClasses="my-3" />
                 </div>
             </div>
 
             <section className="mt-3">
-                <p className="text-zinc-700 dark:text-zinc-300">
-                    Olá, fico feliz que você esteja aqui!
-                </p>
+                <h2 className="text-zinc-700 dark:text-zinc-300 font-sfpmedium text-xl">
+                    Olá, Conheca seu próximo programador.
+                </h2>
                 <br />
                 <p className="text-zinc-700 dark:text-zinc-300">
                     Começei a programar na faculdade em 2022, mas já era apaixonado por tecnologia desde criança, minha jornada no mundo da programação tem sido uma experiência gratificante e estimulante. Enquanto crescia, sempre fui fascinado pelas maravilhas da tecnologia, de computadores a smartphones, e sabia, lá no fundo, que queria fazer parte da magia por trás dessas inovações.
@@ -64,75 +65,71 @@ export function MeContent() {
                 Técnologias que eu uso ou já usei:
             </h2>
 
-            <section className="grid grid-cols-4 grid-rows-2">
-                {/* <div className="grid grid-flow-col place-content-stretch"> */}
-                    <TextBox.Root additionaTailwindClasses="bg-sky-500 border-zinc-600 m-2">
+            <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-rows-2">
+                    <TextBox.Root additionalTailwindClasses="bg-sky-500 border-zinc-600 m-2">
                             <TextBox.Icon icon={<FontAwesomeIcon icon={faReact} />} />
                             <TextBox.Content
                                 title="ReactJS"
-                                textAdditionaTailwindClasses="text-white"
+                                textAdditionalTailwindClasses="text-white"
                                 text="Biblioteca do JavaScript"
-                                titleAdditionaTailwindClasses="text-white" />
+                                titleAdditionalTailwindClasses="text-white" />
                     </TextBox.Root>
-                    <TextBox.Root additionaTailwindClasses="bg-cyan-500 border-zinc-600 m-2">
+                    <TextBox.Root additionalTailwindClasses="bg-cyan-500 border-zinc-600 m-2">
                             <TextBox.Icon icon={<BiLogoTailwindCss />} />
                             <TextBox.Content
                                 title="TailwindCSS"
-                                textAdditionaTailwindClasses="text-white"
+                                textAdditionalTailwindClasses="text-white"
                                 text="Biblioteca de classes CSS"
-                                titleAdditionaTailwindClasses="text-white" />
+                                titleAdditionalTailwindClasses="text-white" />
                     </TextBox.Root>
-                    <TextBox.Root additionaTailwindClasses="bg-green-500 border-zinc-600 m-2">
+                    <TextBox.Root additionalTailwindClasses="bg-green-500 border-zinc-600 m-2">
                             <TextBox.Icon icon={<BiLogoNodejs />} />
                             <TextBox.Content
                                 title="NodeJS"
-                                textAdditionaTailwindClasses="text-white"
+                                textAdditionalTailwindClasses="text-white"
                                 text="BackEnd JavaScript"
-                                titleAdditionaTailwindClasses="text-white" />
+                                titleAdditionalTailwindClasses="text-white" />
                     </TextBox.Root>
-                    <TextBox.Root additionaTailwindClasses="bg-gradient-to-tl from-blue-600 to-yellow-600 border-zinc-600 m-2">
+                    <TextBox.Root additionalTailwindClasses="bg-gradient-to-tl from-blue-600 to-yellow-600 border-zinc-600 m-2">
                             <TextBox.Icon icon={<BiLogoPython />} />
                             <TextBox.Content
                                 title="Python"
-                                textAdditionaTailwindClasses="text-white"
+                                textAdditionalTailwindClasses="text-white"
                                 text="Linguagem alto nível"
-                                titleAdditionaTailwindClasses="text-white" />
+                                titleAdditionalTailwindClasses="text-white" />
                     </TextBox.Root>
-                {/* </div> */}
-                {/* <div className="grid grid-flow-col place-items-center mt-3"> */}
-                     <TextBox.Root additionaTailwindClasses="bg-blue-500 border-zinc-600 m-2">
+                     <TextBox.Root additionalTailwindClasses="bg-blue-500 border-zinc-600 m-2">
                             <TextBox.Icon icon={<BiLogoPhp />} />
                             <TextBox.Content
                                 title="PHP"
-                                textAdditionaTailwindClasses="text-white"
+                                textAdditionalTailwindClasses="text-white"
                                 text="Linguagem BackEnd"
-                                titleAdditionaTailwindClasses="text-white" />
+                                titleAdditionalTailwindClasses="text-white" />
                     </TextBox.Root>
-                    <TextBox.Root additionaTailwindClasses="bg-green-600 border-zinc-600 m-2">
+                    <TextBox.Root additionalTailwindClasses="bg-green-600 border-zinc-600 m-2">
                             <TextBox.Icon icon={<BiLogoMongodb />} />
                             <TextBox.Content
                                 title="MongoDB"
-                                textAdditionaTailwindClasses="text-white"
+                                textAdditionalTailwindClasses="text-white"
                                 text="Banco de dados não relacional"
-                                titleAdditionaTailwindClasses="text-white" />
+                                titleAdditionalTailwindClasses="text-white" />
                     </TextBox.Root>
-                    <TextBox.Root additionaTailwindClasses="bg-blue-600 border-zinc-600 m-2">
+                    <TextBox.Root additionalTailwindClasses="bg-blue-600 border-zinc-600 m-2">
                             <TextBox.Icon icon={<BiLogoPostgresql />} />
                             <TextBox.Content
                                 title="PostfresSQL"
-                                textAdditionaTailwindClasses="text-white"
+                                textAdditionalTailwindClasses="text-white"
                                 text="Banco de dados relacional"
-                                titleAdditionaTailwindClasses="text-white" />
+                                titleAdditionalTailwindClasses="text-white" />
                     </TextBox.Root>
-                    <TextBox.Root additionaTailwindClasses="bg-sky-600 border-zinc-600 m-2">
+                    <TextBox.Root additionalTailwindClasses="bg-sky-600 border-zinc-600 m-2">
                             <TextBox.Icon icon={<BiLogoDocker />} />
                             <TextBox.Content
                                 title="Docker"
-                                textAdditionaTailwindClasses="text-white"
+                                textAdditionalTailwindClasses="text-white"
                                 text="Plataforma de virtualização"
-                                titleAdditionaTailwindClasses="text-white" />
+                                titleAdditionalTailwindClasses="text-white" />
                     </TextBox.Root>
-                {/* </div> */}
             </section>
         </div>
         </motion.div>       

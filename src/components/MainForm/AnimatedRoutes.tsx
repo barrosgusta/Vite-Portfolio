@@ -10,7 +10,7 @@ export function AnimatedRoutes() {
     return (
         <AnimatePresence>
             <Routes location={location} key={location.pathname}>
-                {/* <Route path="/" element={<MeContent />} /> */}
+                <Route path="/" element={<MeContent />} />
                 <Route path="/me" element={<MeContent />} />
                 <Route path="/resume" element={<ResumeContent />} />
                 <Route path="/portfolio" element={<PortfolioContent />} />

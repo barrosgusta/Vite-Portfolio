@@ -9,6 +9,7 @@ export function ResumeContent() {
         <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
         >
         <div className="text-justify m-7">
             <div className="grid place-content-start">

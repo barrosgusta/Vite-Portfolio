@@ -2,13 +2,13 @@ import { ReactNode } from "react";
 
 interface TextBoxIconProps {
     icon: ReactNode;
-    additionaTailwindClasses?: string;
+    additionalTailwindClasses?: string;
 }
 
-export function TextBoxIcon({icon, additionaTailwindClasses = "text-white"}: TextBoxIconProps) {
+export function TextBoxIcon({icon, additionalTailwindClasses = "text-white"}: TextBoxIconProps) {
     return (
         <div className={"text-5xl drop-shadow-lg mr-3"
-        + " " + additionaTailwindClasses}>
+        + " " + additionalTailwindClasses}>
             {icon}
         </div>
     )

@@ -7,10 +7,11 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { PillSeparator } from '../PillSeparator';
 import { Mail, MapPin, PhoneIcon } from 'lucide-react';
+import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
 
 export function SideBarInfo() {
     return (
-        <div className="grid place-items-center">
+        <div className="grid grid-flow-col lg:grid-flow-row place-items-center">
             <div className="flex flex-col justify-center items-start">
                 <div className="grid grid-flow-col place-items-center">
                     
@@ -37,10 +38,14 @@ export function SideBarInfo() {
                 </div>
             </div>
 
-            {/* <div className="border border-zinc-500 w-24 h-0 my-2 flex flex-col items-center justify-center"></div> */}
+            <PillSeparator additionalTailwindClasses='rotate-90 lg:rotate-0 w-24 lg:m-5 lg:mb-7' />
 
-            <PillSeparator />
-            <div className="flex flex-row items-center">
+            <div className="flex flex-col lg:flex-row items-center">
+                <IconFrame
+                    icon={<FontAwesomeIcon icon={faGithub} />}
+                    isSmall
+                    href="https://github.com/barrosgusta"
+                />
                 <IconFrame
                     icon={<FontAwesomeIcon icon={faLinkedin} />}
                     isSmall

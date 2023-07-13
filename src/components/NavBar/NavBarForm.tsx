@@ -2,7 +2,7 @@ import { Link, useMatch, useResolvedPath } from "react-router-dom";
 
 export function NavBarForm() {
     return (
-        <nav className="lg:grid  hidden w-fit backdrop-blur-3xl bg-zinc-100 bg-opacity-60 rounded-bl-xl border border-zinc-200 rounded-tr-xl shadow-lg duration-75 z-50
+        <nav className="lg:grid hidden w-fit bg-zinc-100 rounded-bl-xl border border-zinc-200 rounded-tr-xl shadow-lg duration-75 z-50
         dark:bg-zinc-800 dark:border-zinc-700">
             <ul className="grid grid-flow-col place-content-center">
                 <li className="m-2">
