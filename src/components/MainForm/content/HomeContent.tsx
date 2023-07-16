@@ -24,7 +24,7 @@ export function HomeContent() {
 
             <section className="mt-3">
                 <h2 className="text-zinc-700 dark:text-zinc-300 font-sfpmedium text-xl">
-                    Olá, Conheca seu próximo programador.
+                    Olá, conheça seu próximo desenvolvedor:
                 </h2>
                 <br />
                 <p className="text-zinc-700 dark:text-zinc-300">
@@ -56,7 +56,7 @@ export function HomeContent() {
                 </p>
                 <br />
                 <p className="text-zinc-700 dark:text-zinc-300">
-                    Começar minha jornada de programação na faculdade em 2022 pode ter sido um início tardio em comparação com alguns, mas minha paixão por tecnologia sempre foi uma força motriz. A cada linha de código que escrevo, lembro-me do potencial ilimitado e das infinitas possibilidades que estão por vir neste mundo empolgante e em constante expansão da programação.
+                    Começar minha jornada de programação na faculdade em 2022 pode ter sido um início tardio em comparação com alguns, mas minha paixão por tecnologia sempre foi uma força motriz.
                 </p>
             </section>
 

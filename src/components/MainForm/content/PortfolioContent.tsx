@@ -3,11 +3,11 @@ import { PillSeparator } from "../../PillSeparator";
 import { motion } from "framer-motion";
 
 
-const PORTFOLIO_IMG = "https://github.com/barrosgusta/ioslike-portfolio/blob/main/screenshots/demo.gif";
-const CHATBOT_IMG = "https://github.com/barrosgusta/chatbot-ai/blob/main/screenshots/demo.gif";
-const TRUCOGAME_IMG = "https://github.com/barrosgusta/delphi-truco/blob/main/screenshots/demo.gif";
-const BRASILEIRAOMANAGER_IMG = "https://github.com/barrosgusta/brasileirao_manager/blob/main/screenshots/demo.gif";
-const PHPCRUD_IMG = "https://github.com/barrosgusta/php-crud/blob/main/screenshots/form.png";
+const PORTFOLIO_IMG = "https://github.com/barrosgusta/ioslike_portfolio/blob/main/screenshots/demo.gif?raw=true";
+const CHATBOT_IMG = "https://github.com/barrosgusta/chatbot_ai/blob/main/screenshots/demo.gif?raw=true";
+const TRUCOGAME_IMG = "https://github.com/barrosgusta/delphi-truco/blob/main/screenshots/main.png?raw=true";
+const BRASILEIRAOMANAGER_IMG = "https://github.com/barrosgusta/brasileirao_manager/blob/main/screenshots/main.png?raw=true";
+const PHPCRUD_IMG = "https://github.com/barrosgusta/php-crud/blob/main/screenshots/form.png?raw=true";
 
 export function PortfolioContent() {
     return (
@@ -29,13 +29,13 @@ export function PortfolioContent() {
             <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 place-items-center gap-6">
                 <ImageMiniature 
                     imageSource={PORTFOLIO_IMG}
-                    url="https://github.com/barrosgusta/ioslike-portfilio" 
+                    url="https://github.com/barrosgusta/ioslike_portfilio" 
                     title="Portfólio com Vite" 
                     additionalTailwindClasses="w-full" />  
 
                 <ImageMiniature 
                     imageSource={CHATBOT_IMG}
-                    url="https://github.com/barrosgusta/chatbot-ai" 
+                    url="https://github.com/barrosgusta/chatbot_ai" 
                     title="ChatBot AI funcional com NextJS" 
                     additionalTailwindClasses="w-full" />  
 
@@ -47,7 +47,7 @@ export function PortfolioContent() {
 
                 <ImageMiniature 
                     imageSource={BRASILEIRAOMANAGER_IMG}
-                    url="https://github.com/barrosgusta/pascal-brasileirao_manager" 
+                    url="https://github.com/barrosgusta/brasileirao_manager" 
                     title="Brasileirão Manager" 
                     additionalTailwindClasses="w-full" /> 
 
