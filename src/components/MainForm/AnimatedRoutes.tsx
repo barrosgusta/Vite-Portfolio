@@ -1,6 +1,6 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 import { ContactContent } from "./content/ContactContent";
-import { MeContent } from "./content/MeContent";
+import { HomeContent } from "./content/HomeContent";
 import { PortfolioContent } from "./content/PortfolioContent";
 import { ResumeContent } from "./content/ResumeContent";
 import { AnimatePresence } from "framer-motion";
@@ -10,8 +10,8 @@ export function AnimatedRoutes() {
     return (
         <AnimatePresence>
             <Routes location={location} key={location.pathname}>
-                <Route path="/" element={<MeContent />} />
-                <Route path="/me" element={<MeContent />} />
+                <Route path="/" element={<HomeContent />} />
+                <Route path="/home" element={<HomeContent />} />
                 <Route path="/resume" element={<ResumeContent />} />
                 <Route path="/portfolio" element={<PortfolioContent />} />
                 <Route path="/contact" element={<ContactContent />} />

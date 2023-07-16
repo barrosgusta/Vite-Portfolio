@@ -5,7 +5,7 @@ import { faReact } from "@fortawesome/free-brands-svg-icons";
 import { BiLogoDocker, BiLogoMongodb, BiLogoNodejs, BiLogoPhp, BiLogoPostgresql, BiLogoPython, BiLogoTailwindCss } from 'react-icons/bi';
 import { motion } from "framer-motion";
 
-export function MeContent() {
+export function HomeContent() {
     return (
         <motion.div
             initial={{ opacity: 0 }}
@@ -16,7 +16,7 @@ export function MeContent() {
             <div className="grid place-content-start">
                 <div className="grid">
                     <h1 className="text-zinc-800 dark:text-zinc-100 text-3xl font-sfpbold">
-                        Eu
+                        Introdução
                     </h1>
                     <PillSeparator additionalTailwindClasses="my-3" />
                 </div>

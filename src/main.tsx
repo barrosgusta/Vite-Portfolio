@@ -10,7 +10,7 @@ import './global.css'
 library.add(fas);
 library.add(fab);
 
-(window.location.pathname === '/') ? window.location.pathname = '/me' : null
+(window.location.pathname === '/') ? window.location.pathname = '/home' : null
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

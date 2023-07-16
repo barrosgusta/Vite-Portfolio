@@ -1,5 +1,3 @@
-import ProfileImage from '../assets/images/profile1.png';
-
 interface ProfilePictureProps {
     additionalTailwindClasses?: string;
 }
@@ -8,7 +6,7 @@ export function ProfilePicture({ additionalTailwindClasses }: ProfilePictureProp
     return (
         <div className={"rounded-xl border border-zinc-500 bg-zinc-800 shadow-default hover:bg-white transition-all duration-75"
             + " " + additionalTailwindClasses} >
-            <img src={ProfileImage} 
+            <img src="https://github.com/barrosgusta.png" 
             alt="Profile" 
             className="flex items-center justify-center text-white text-xs text-center h-full"
             />

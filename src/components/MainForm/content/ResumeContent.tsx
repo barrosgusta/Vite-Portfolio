@@ -13,11 +13,11 @@ export function ResumeContent() {
         >
         <div className="text-justify m-7">
             <div className="grid place-content-start">
-                <div className="grid place-items-center">
+                <div className="grid">
                     <h1 className="text-zinc-700 dark:text-zinc-100 text-3xl font-sfpbold">
                         Currículo
                     </h1>
-                    <PillSeparator />
+                    <PillSeparator additionalTailwindClasses="my-3" />
                 </div>
             </div>
             <section className="text-zinc-700 dark:text-zinc-300">

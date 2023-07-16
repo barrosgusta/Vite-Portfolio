@@ -8,7 +8,7 @@ export function SideBar() {
         dark:bg-zinc-800 dark:bg-opacity-80 dark:border-zinc-700">
             <div className='grid grid-flow-col lg:grid-flow-row place-items-center m-8'>
                 <div className='grid grid-flow-row place-items-center md:p-2 xl:p-0'>
-                    <ProfilePicture additionalTailwindClasses='mb-2 lg:m-5 w-40 lg:w-44' />
+                    <ProfilePicture additionalTailwindClasses='mb-2 lg:m-5 w-40 h-40 lg:w-44 lg:h-44' />
                     <h1 className="text-zinc-800 dark:text-zinc-200 text-xl text-center font-sfpmedium drop-shadow-sm">
                         Gustavo Barros da Silveira
                     </h1>
