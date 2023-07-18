@@ -62,7 +62,7 @@ export function HomeContent() {
 
 
             <h2 className="text-zinc-700 dark:text-zinc-100 text-2xl font-bold mt-7 mb-4">
-                Técnologias que eu uso ou já usei:
+                Tecnologias que eu uso ou já usei:
             </h2>
 
             <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-rows-2">
@@ -87,7 +87,7 @@ export function HomeContent() {
                             <TextBox.Content
                                 title="NodeJS"
                                 textAdditionalTailwindClasses="text-white"
-                                text="BackEnd JavaScript"
+                                text="Backend JavaScript"
                                 titleAdditionalTailwindClasses="text-white" />
                     </TextBox.Root>
                     <TextBox.Root additionalTailwindClasses="bg-gradient-to-tl from-blue-600 to-yellow-600 border-zinc-600 m-2">
@@ -103,7 +103,7 @@ export function HomeContent() {
                             <TextBox.Content
                                 title="PHP"
                                 textAdditionalTailwindClasses="text-white"
-                                text="Linguagem BackEnd"
+                                text="Linguagem Backend"
                                 titleAdditionalTailwindClasses="text-white" />
                     </TextBox.Root>
                     <TextBox.Root additionalTailwindClasses="bg-green-600 border-zinc-600 m-2">

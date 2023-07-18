@@ -4,7 +4,7 @@ interface ProfilePictureProps {
 
 export function ProfilePicture({ additionalTailwindClasses }: ProfilePictureProps) {
     return (
-        <div className={"rounded-xl border border-zinc-500 bg-zinc-800 shadow-default hover:bg-white transition-all duration-75"
+        <div className={"rounded-xl border border-zinc-500 bg-zinc-800 shadow-default hover:bg-white transition-all duration-75 overflow-hidden"
             + " " + additionalTailwindClasses} >
             <img src="https://github.com/barrosgusta.png" 
             alt="Profile" 
