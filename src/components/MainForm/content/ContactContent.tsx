@@ -50,7 +50,7 @@ export function ContactContent() {
                                 <input type="text" 
                                         name="name" 
                                         placeholder="Nome Completo"
-                                        className="block w-full rounded-md p-3 text-zinc-800 shadow-sm border border-zinc-300 placeholder:text-zinc-400 focus:border-2 focus:border-indigo-600 text-sm leading-6
+                                        className="block w-full rounded-md p-3 text-zinc-800 shadow-sm border-zinc-300 placeholder:text-zinc-400 border-2 focus:border-indigo-600 text-sm leading-6
                                 dark:bg-zinc-800 dark:border-indigo-400 dark:text-zinc-100" />
                             </div>
 
@@ -58,14 +58,14 @@ export function ContactContent() {
                                 <input type="email" 
                                         name="email" 
                                         placeholder="E-Mail"
-                                        className="block w-full rounded-md p-3 text-zinc-800 shadow-sm border border-zinc-300 placeholder:text-zinc-400 focus:border-2 focus:border-indigo-600 text-sm leading-6
+                                        className="block w-full rounded-md p-3 text-zinc-800 shadow-sm border-zinc-300 placeholder:text-zinc-400 border-2 focus:border-indigo-600 text-sm leading-6
                                 dark:bg-zinc-800 dark:border-indigo-400 dark:text-zinc-100" />
                             </div>
 
                             <div className="col-span-6">
                                 <textarea name="message"
                                             placeholder="Sua Mensagem"
-                                            className="block w-full min-h-[100px] max-h-52 rounded-md p-3 text-zinc-800 shadow-sm border border-zinc-300 placeholder:text-zinc-400 focus:border-2 focus:border-indigo-600 text-sm
+                                            className="block w-full min-h-[100px] max-h-52 rounded-md p-3 text-zinc-800 shadow-sm border-zinc-300 placeholder:text-zinc-400 border-2 focus:border-indigo-600 text-sm
                                 dark:bg-zinc-800 dark:border-indigo-400 dark:text-zinc-100" />
                             </div>
 

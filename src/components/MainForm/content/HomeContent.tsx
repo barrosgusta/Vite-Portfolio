@@ -22,7 +22,7 @@ export function HomeContent() {
                 </div>
             </div>
 
-            <section className="mt-3">
+            <section className="mt-3 text-left">
                 <h2 className="text-zinc-700 dark:text-zinc-300 font-sfpmedium text-xl">
                     Olá, conheça seu próximo desenvolvedor:
                 </h2>
@@ -117,7 +117,7 @@ export function HomeContent() {
                     <TextBox.Root additionalTailwindClasses="bg-blue-600 border-zinc-600 m-2">
                             <TextBox.Icon icon={<BiLogoPostgresql />} />
                             <TextBox.Content
-                                title="PostfresSQL"
+                                title="PostgreSQL"
                                 textAdditionalTailwindClasses="text-white"
                                 text="Banco de dados relacional"
                                 titleAdditionalTailwindClasses="text-white" />

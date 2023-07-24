@@ -16,7 +16,7 @@ export function ImageMiniature({imageSource, url, title, additionalTailwindClass
             <div className='absolute z-10'>
                 <IconFrame icon={<Link />} isSmall={true} href={url} />
             </div>
-            <img src={imageSource} className="w-screen object-cover z-0" />
+            <img src={imageSource} className="w-screen object-cover z-0 aspect-video" loading='lazy' />
         </figure>
     )
 }
