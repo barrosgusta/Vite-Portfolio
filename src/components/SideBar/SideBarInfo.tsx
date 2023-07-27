@@ -33,7 +33,7 @@ export function SideBarInfo() {
                 <div className="grid grid-flow-col place-items-center">
                     <IconFrame icon={<PhoneIcon />} />
                     <span className="text-zinc-700 dark:text-zinc-300 text-xs text-left justify-center">
-                        +55 (49) 9 999910202
+                        +55 (49) 9 9991-0202
                     </span>
                 </div>
             </div>
