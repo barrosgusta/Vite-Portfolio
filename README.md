@@ -1,3 +1,2 @@
-# IOS LIKE PORTFOLIO
- Written with Vite, ReactJS, Framer Motion and TailwindCSS
+# ReactJS with Vite Portfolio
  ![Alt text](https://github.com/barrosgusta/ioslike-portfolio/blob/main/screenshots/demo.gif)
