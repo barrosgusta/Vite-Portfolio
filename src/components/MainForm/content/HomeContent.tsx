@@ -88,16 +88,22 @@ export function HomeContent() {
                                 title="NodeJS"
                                 textAdditionalTailwindClasses="text-white"
                                 text="Backend JavaScript"
-                                titleAdditionalTailwindClasses="text-white" />
+                                titleAdditionalTailwindClasses="text-white"
+                            />
                     </TextBox.Root>
+
                     <TextBox.Root additionalTailwindClasses="bg-gradient-to-tl from-blue-600 to-yellow-600 border-zinc-600 m-2">
                             <TextBox.Icon icon={<BiLogoPython />} />
+
                             <TextBox.Content
                                 title="Python"
                                 textAdditionalTailwindClasses="text-white"
                                 text="Linguagem alto nível"
-                                titleAdditionalTailwindClasses="text-white" />
+                                titleAdditionalTailwindClasses="text-white" 
+                            />
+
                     </TextBox.Root>
+
                      <TextBox.Root additionalTailwindClasses="bg-blue-500 border-zinc-600 m-2">
                             <TextBox.Icon icon={<BiLogoPhp />} />
                             <TextBox.Content
@@ -106,29 +112,42 @@ export function HomeContent() {
                                 text="Linguagem Backend"
                                 titleAdditionalTailwindClasses="text-white" />
                     </TextBox.Root>
+
                     <TextBox.Root additionalTailwindClasses="bg-green-600 border-zinc-600 m-2">
+
                             <TextBox.Icon icon={<BiLogoMongodb />} />
+
                             <TextBox.Content
                                 title="MongoDB"
                                 textAdditionalTailwindClasses="text-white"
                                 text="Banco de dados não relacional"
-                                titleAdditionalTailwindClasses="text-white" />
+                                titleAdditionalTailwindClasses="text-white" 
+                            />
+
                     </TextBox.Root>
+
                     <TextBox.Root additionalTailwindClasses="bg-blue-600 border-zinc-600 m-2">
                             <TextBox.Icon icon={<BiLogoPostgresql />} />
+
                             <TextBox.Content
                                 title="PostgreSQL"
                                 textAdditionalTailwindClasses="text-white"
                                 text="Banco de dados relacional"
-                                titleAdditionalTailwindClasses="text-white" />
+                                titleAdditionalTailwindClasses="text-white" 
+                            />
+
                     </TextBox.Root>
+
                     <TextBox.Root additionalTailwindClasses="bg-sky-600 border-zinc-600 m-2">
                             <TextBox.Icon icon={<BiLogoDocker />} />
+
                             <TextBox.Content
                                 title="Docker"
                                 textAdditionalTailwindClasses="text-white"
                                 text="Plataforma de virtualização"
-                                titleAdditionalTailwindClasses="text-white" />
+                                titleAdditionalTailwindClasses="text-white" 
+                            />
+
                     </TextBox.Root>
             </section>
         </div>

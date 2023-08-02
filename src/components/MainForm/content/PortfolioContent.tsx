@@ -1,10 +1,11 @@
-import { ImageMiniature } from "../../ImageMiniature";
+import { ImageMiniature } from "../../ImageMiniature/index.tsx";
 import { PillSeparator } from "../../PillSeparator";
 import { motion } from "framer-motion";
 
 
 const PORTFOLIO_IMG = "https://github.com/barrosgusta/ioslike_portfolio/blob/main/screenshots/demo.gif?raw=true";
 const CHATBOT_IMG = "https://github.com/barrosgusta/chatbot_ai/blob/main/screenshots/demo.gif?raw=true";
+const SPOTIFY_IMG = "https://github.com/barrosgusta/spotify-clone/blob/main/screenshots/demo.png?raw=true";
 const TRUCOGAME_IMG = "https://github.com/barrosgusta/delphi-truco/blob/main/screenshots/main.png?raw=true";
 const BRASILEIRAOMANAGER_IMG = "https://github.com/barrosgusta/brasileirao_manager/blob/main/screenshots/main.png?raw=true";
 const PHPCRUD_IMG = "https://github.com/barrosgusta/php-crud/blob/main/screenshots/form.png?raw=true";
@@ -27,35 +28,80 @@ export function PortfolioContent() {
             </div>
 
             <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 place-items-center gap-6">
-                <ImageMiniature 
-                    imageSource={PORTFOLIO_IMG}
-                    url="https://github.com/barrosgusta/ioslike_portfilio" 
-                    title="Portfólio com Vite" 
-                    additionalTailwindClasses="w-full" />  
 
-                <ImageMiniature 
-                    imageSource={CHATBOT_IMG}
-                    url="https://github.com/barrosgusta/chatbot_ai" 
-                    title="ChatBot AI funcional com NextJS" 
-                    additionalTailwindClasses="w-full" />  
+            <ImageMiniature.Root 
+                imageSource={PORTFOLIO_IMG}
+                projectUrl="https://github.com/barrosgusta/ioslike_portfilio"
+                siteUrl="https://barrosgusta.netlify.app/"
+                title="Portfólio"
+                className="w-full"
+            >
+                <ImageMiniature.Description 
+                    description="Portfólio web feito em ReactJS utilizando Vite, TailwindCSS, Framer Motion e React Router. Neste projeto foi aplicando conceitos de boas práticas de UI/UX e reutilização de componentes." 
+                    className="group-hover:h-[105px]" 
+                />
+            </ImageMiniature.Root>
 
-                <ImageMiniature 
-                    imageSource={TRUCOGAME_IMG}
-                    url="https://github.com/barrosgusta/delphi-truco" 
-                    title="Truco em Delphi 7" 
-                    additionalTailwindClasses="w-full" /> 
+            <ImageMiniature.Root
+                imageSource={CHATBOT_IMG}
+                projectUrl="https://github.com/barrosgusta/chatbot_ai"
+                title="ChatBot AI"
+                className="w-full"
+            >
+                <ImageMiniature.Description
+                    description="ChatBot feito em NextJS utilizando TailwindCSS e Shadcn/UI. Neste projeto foi utilizado a API da OpenAI e usado-a como base para o desenvolvimento do ChatBot."
+                    className="group-hover:h-[85px]"
+                />
+            </ImageMiniature.Root>
 
-                <ImageMiniature 
-                    imageSource={BRASILEIRAOMANAGER_IMG}
-                    url="https://github.com/barrosgusta/brasileirao_manager" 
-                    title="Brasileirão Manager" 
-                    additionalTailwindClasses="w-full" /> 
+            <ImageMiniature.Root
+                imageSource={SPOTIFY_IMG}
+                projectUrl="https://github.com/barrosgusta/spotify-clone"
+                title="Spotify Clone"
+                className="w-full"
+            >
+                <ImageMiniature.Description
+                    description="Clone do Spotify feito em NextJS utilizando TailwindCSS, Supabase, Stripe, Radix e PostgreSQL."
+                    className="group-hover:h-16"
+                />
+            </ImageMiniature.Root>
 
-                <ImageMiniature 
-                    imageSource={PHPCRUD_IMG}
-                    url="https://github.com/barrosgusta/php-crud" 
-                    title="Crud em PHP e frame MVC" 
-                    additionalTailwindClasses="w-full" />           
+            <ImageMiniature.Root
+                imageSource={TRUCOGAME_IMG}
+                projectUrl="https://github.com/barrosgusta/delphi-truco"
+                title="Truco"
+                className="w-full"
+            >
+                <ImageMiniature.Description
+                    description="Jogo de Truco feito em Delphi 7."
+                    className="group-hover:h-12"
+                />
+            </ImageMiniature.Root>
+
+            <ImageMiniature.Root
+                imageSource={BRASILEIRAOMANAGER_IMG}
+                projectUrl="https://github.com/barrosgusta/brasileirao_manager"
+                title="Brasileirão Manager"
+                className="w-full"
+            >
+                <ImageMiniature.Description
+                    description="Gerenciador de campeonatos com foco no Brasileirão feito em Pascal utilizando o Pascalzim. Neste projeto foi aplicando conceitos de estrutura de dados como pilha, fila e lista, assim como a utilização de ponteiros."
+                    className="group-hover:h-[105px]"
+                />
+            </ImageMiniature.Root>
+
+            <ImageMiniature.Root
+                imageSource={PHPCRUD_IMG}
+                projectUrl="https://github.com/barrosgusta/php-crud"
+                title="Crud PHP"
+                className="w-full"
+            >
+                <ImageMiniature.Description
+                    description="Crud feito em PHP utilizando banco de dados MySQL. Neste projeto foi aplicando a arquitetura MVC (Model, View, Controller)."
+                    className="group-hover:h-[83px]"
+                />
+            </ImageMiniature.Root>
+
             </section>
 
             <PillSeparator additionalTailwindClasses="m-6" />
