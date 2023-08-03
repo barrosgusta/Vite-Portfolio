@@ -19,7 +19,7 @@ export function IconFrame({icon, isSmall = false, href = '', className}: IconFra
         onClick={() => HandleLinkClick(href)} 
         className={twMerge("rounded-md w-8 h-8 border hover:border-zinc-500 border-indigo-400 bg-zinc-100 m-2 shadow-default transition-all hover:bg-zinc-950 hover:shadow-none hover:cursor-pointer dark:bg-zinc-800", className)}
       >
-        <div about="" className="flex items-center justify-center text-zinc-900 hover:text-zinc-50 text-s text-center h-full dark:text-zinc-200">
+        <div about="" className="flex items-center justify-center text-zinc-900 hover:text-zinc-50 text-center h-full dark:text-zinc-200">
           {icon}     
         </div>
 
