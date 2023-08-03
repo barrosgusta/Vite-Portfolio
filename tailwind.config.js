@@ -33,6 +33,9 @@ module.exports = {
       screens : {
         dark: { raw: '(prefers-color-scheme: dark)' },
       },
+      boxShadow: {
+        'default': '0 0px 8px 0px rgb(0, 0, 0, 0.3)',
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
