@@ -1,14 +1,14 @@
 import { ReactNode } from "react";
+import { twMerge } from "tailwind-merge";
 
 interface TextBoxIconProps {
     icon: ReactNode;
-    additionalTailwindClasses?: string;
+    className?: string;
 }
 
-export function TextBoxIcon({icon, additionalTailwindClasses = "text-white"}: TextBoxIconProps) {
+export function TextBoxIcon({icon, className = "text-white"}: TextBoxIconProps) {
     return (
-        <div className={"text-5xl drop-shadow-lg mr-3"
-        + " " + additionalTailwindClasses}>
+        <div className={twMerge("text-5xl drop-shadow-lg mr-3", className)}>
             {icon}
         </div>
     )

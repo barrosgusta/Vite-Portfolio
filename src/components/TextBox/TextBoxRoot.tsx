@@ -1,14 +1,14 @@
 import { ReactNode } from "react";
+import { twMerge } from "tailwind-merge";
 
 interface TextBoxRootProps {
     children: ReactNode;
-    additionalTailwindClasses?: string;
+    className?: string;
 }
 
-export function TextBoxRoot({ children, additionalTailwindClasses = "border-zinc-700 bg-zinc-800" }: TextBoxRootProps) {
+export function TextBoxRoot({ children, className = "border-zinc-700 bg-zinc-800" }: TextBoxRootProps) {
     return (
-        <div className={"py-5 rounded-xl backdrop-blur-3xl bg-opacity-70 border shadow-default"
-        + " " + additionalTailwindClasses} >
+        <div className={twMerge("py-5 rounded-xl backdrop-blur-3xl bg-opacity-70 border shadow-default", className)} >
             <div className="flex justify-center items-center">
                 {children}
             </div>

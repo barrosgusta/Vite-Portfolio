@@ -1,15 +1,14 @@
+import { twMerge } from "tailwind-merge";
+
 interface TextBoxContentProps {
-    title: string;
-    titleAdditionalTailwindClasses?: string;
-    text: string;
-    textAdditionalTailwindClasses?: string;
+    className?: string;
+    children: React.ReactNode;
 }
 
-export function TextBoxContent({title, titleAdditionalTailwindClasses = "text-zinc-50", text, textAdditionalTailwindClasses = "text-zinc-200"}: TextBoxContentProps) {
+export function TextBoxContent({ children, className }: TextBoxContentProps) {
     return (
-        <div className="text-left justify-center">
-            <h1 className={"text-2xl font-bold drop-shadow-lg" +  " " + titleAdditionalTailwindClasses}>{title}</h1>
-            <p className={"text-sm drop-shadow-lg" + " " + textAdditionalTailwindClasses}>{text}</p>
+        <div className={twMerge("text-left justify-center", className)}>
+            {children}
         </div>       
     )
 }
