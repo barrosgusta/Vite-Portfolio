@@ -12,10 +12,10 @@ export function ContactContent() {
             <div className="text-justify m-7">
                 <div className="grid place-content-start">
                     <div className="grid">
-                        <h1 className="text-zinc-800 dark:text-zinc-100 text-3xl font-sfpbold">
+                        <h1 className="text-zinc-800 dark:text-zinc-100 text-3xl font-bold">
                             Contato
                         </h1>
-                        <PillSeparator additionalTailwindClasses="my-3" />
+                        <PillSeparator className="my-3" />
                     </div>
                 </div>
 
@@ -42,7 +42,7 @@ export function ContactContent() {
 
                 <form action="https://getform.io/f/b4d41457-4df7-403e-b23f-c16a6efd1d4f" method="post" className="transition-all duration-300">
                     <div className="mb-6">
-                        <h2 className="font-sfpmedium text-zinc-800 dark:text-zinc-100 mb-2">Formulário de Contato</h2>
+                        <h2 className="font-bold text-zinc-800 dark:text-zinc-100 mb-2">Formulário de Contato</h2>
 
                         <div className="grid gap-x-6 gap-y-5 grid-cols-6 font-sfp">
 
@@ -73,7 +73,7 @@ export function ContactContent() {
                     </div>
                     <SubmitButton
                         text="Enviar"
-                        additionaTailwindClasses="w-full"
+                        className="w-full"
                     />
                 </form>
             </div>

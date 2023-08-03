@@ -20,10 +20,10 @@ export function PortfolioContent() {
         <div className="text-justify m-7">
             <div className="grid place-content-start">
                 <div className="grid">
-                    <h1 className="text-zinc-800 dark:text-zinc-100 text-3xl font-sfpbold">
+                    <h1 className="text-zinc-800 dark:text-zinc-100 text-3xl font-bold">
                         Portfólio de Projetos
                     </h1>
-                    <PillSeparator additionalTailwindClasses="my-3" />
+                    <PillSeparator className="my-3" />
                 </div>
             </div>
 
@@ -37,9 +37,12 @@ export function PortfolioContent() {
                 className="w-full"
             >
                 <ImageMiniature.Description 
-                    description="Portfólio web feito em ReactJS utilizando Vite, TailwindCSS, Framer Motion e React Router. Neste projeto foi aplicando conceitos de boas práticas de UI/UX e reutilização de componentes." 
                     className="group-hover:h-[105px]" 
-                />
+                >
+                    <p className='text-xs sm:text-sm text-center mx-5'>
+                        Portfólio web feito em ReactJS utilizando Vite, TailwindCSS, Framer Motion e React Router. Neste projeto foi aplicando conceitos de boas práticas de UI/UX e reutilização de componentes.
+                    </p>
+                </ImageMiniature.Description>
             </ImageMiniature.Root>
 
             <ImageMiniature.Root
@@ -49,9 +52,12 @@ export function PortfolioContent() {
                 className="w-full"
             >
                 <ImageMiniature.Description
-                    description="ChatBot feito em NextJS utilizando TailwindCSS e Shadcn/UI. Neste projeto foi utilizado a API da OpenAI e usado-a como base para o desenvolvimento do ChatBot."
                     className="group-hover:h-[85px]"
-                />
+                >
+                    <p className='text-xs sm:text-sm text-center mx-5'>
+                        ChatBot feito em NextJS utilizando TailwindCSS e Shadcn/UI. Neste projeto foi utilizado a API da OpenAI e usado-a como base para o desenvolvimento do ChatBot.
+                    </p>        
+                </ImageMiniature.Description>
             </ImageMiniature.Root>
 
             <ImageMiniature.Root
@@ -61,9 +67,12 @@ export function PortfolioContent() {
                 className="w-full"
             >
                 <ImageMiniature.Description
-                    description="Clone do Spotify feito em NextJS utilizando TailwindCSS, Supabase, Stripe, Radix e PostgreSQL."
                     className="group-hover:h-16"
-                />
+                >
+                    <p className='text-xs sm:text-sm text-center mx-5'>
+                        Clone do Spotify feito em NextJS utilizando TailwindCSS, Supabase, Stripe, Radix e PostgreSQL.
+                    </p>
+                </ImageMiniature.Description>
             </ImageMiniature.Root>
 
             <ImageMiniature.Root
@@ -73,9 +82,12 @@ export function PortfolioContent() {
                 className="w-full"
             >
                 <ImageMiniature.Description
-                    description="Jogo de Truco feito em Delphi 7."
                     className="group-hover:h-12"
-                />
+                >
+                    <p className='text-xs sm:text-sm text-center mx-5'>
+                        Jogo de Truco feito em Delphi 7.
+                    </p>  
+                </ImageMiniature.Description>
             </ImageMiniature.Root>
 
             <ImageMiniature.Root
@@ -85,9 +97,12 @@ export function PortfolioContent() {
                 className="w-full"
             >
                 <ImageMiniature.Description
-                    description="Gerenciador de campeonatos com foco no Brasileirão feito em Pascal utilizando o Pascalzim. Neste projeto foi aplicando conceitos de estrutura de dados como pilha, fila e lista, assim como a utilização de ponteiros."
                     className="group-hover:h-[105px]"
-                />
+                >
+                    <p className='text-xs sm:text-sm text-center mx-5'>
+                        Gerenciador de campeonatos com foco no Brasileirão feito em Pascal utilizando o Pascalzim. Neste projeto foi aplicando conceitos de estrutura de dados como pilha, fila e lista, assim como a utilização de ponteiros.
+                    </p>
+                </ImageMiniature.Description>
             </ImageMiniature.Root>
 
             <ImageMiniature.Root
@@ -97,17 +112,20 @@ export function PortfolioContent() {
                 className="w-full"
             >
                 <ImageMiniature.Description
-                    description="Crud feito em PHP utilizando banco de dados MySQL. Neste projeto foi aplicando a arquitetura MVC (Model, View, Controller)."
                     className="group-hover:h-[83px]"
-                />
+                >
+                    <p className='text-xs sm:text-sm text-center mx-5'>
+                        Crud feito em PHP utilizando banco de dados MySQL. Neste projeto foi aplicando a arquitetura MVC (Model, View, Controller).
+                    </p>
+                </ImageMiniature.Description>
             </ImageMiniature.Root>
 
             </section>
 
-            <PillSeparator additionalTailwindClasses="m-6" />
+            <PillSeparator className="m-6 w-auto" />
 
-            <section className="text-zinc-700 dark:text-zinc-200 font-sfp">
-                <h2 className="font-sfpbold mb-2">Outros projetos que já fiz porém não estão no GitHub:</h2> 
+            <section className="text-zinc-700 dark:text-zinc-200 text-left">
+                <h2 className="font-bold text-lg mb-2">Outros projetos que já fiz porém não estão no GitHub:</h2> 
                 <p>Clone do NotePad++, Semi-Simulador de Física com um objeto interativo na tela, Gerenciador de Chamados para uso interno na empresa em que trabalhava, Jogo Pong, Conversor de Números (Hex, Octal...), Conversor de Código Morse, Interpretador BrainF*ck, todos desenvolvidos no Borland Delphi 7 e banco PostgreSQL.</p>
             </section>
         </div>
