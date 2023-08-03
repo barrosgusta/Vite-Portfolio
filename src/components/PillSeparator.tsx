@@ -1,11 +1,11 @@
+import { twMerge } from "tailwind-merge"
+
 interface PillSeparatorProps {
-    additionalTailwindClasses?: string
+    className?: string
 }
 
-
-export function PillSeparator({ additionalTailwindClasses = "w-24 m-4"}: PillSeparatorProps) {
+export function PillSeparator({ className }: PillSeparatorProps) {
     return (
-        <div className={"rounded-xl border-2 border-zinc-500 dark:border-zinc-200 h-0 shadow-md"
-        + " " + additionalTailwindClasses}></div>
+        <div className={twMerge("rounded-xl border-2 border-zinc-500 dark:border-zinc-200 h-0 shadow-md", className)}/>
     )
 }

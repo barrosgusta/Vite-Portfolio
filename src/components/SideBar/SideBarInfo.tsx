@@ -38,7 +38,7 @@ export function SideBarInfo() {
                 </div>
             </div>
 
-            <PillSeparator additionalTailwindClasses='rotate-90 lg:rotate-0 w-24 lg:m-5 lg:mb-7' />
+            <PillSeparator className='rotate-90 lg:rotate-0 w-24 lg:m-5 lg:mb-7' />
 
             <div className="flex flex-col lg:flex-row items-center">
                 <IconFrame
