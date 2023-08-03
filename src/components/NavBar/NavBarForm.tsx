@@ -3,7 +3,7 @@ import { Link, useMatch, useResolvedPath } from "react-router-dom";
 export function NavBarForm() {
     return (
         <nav className="lg:grid hidden w-fit bg-zinc-100 rounded-bl-xl border border-zinc-200 rounded-tr-xl shadow-lg duration-75 z-50
-        dark:bg-zinc-800 dark:border-zinc-700 font-sfpmedium">
+        dark:bg-zinc-800 dark:border-zinc-700 font-semibold">
             <ul className="grid grid-flow-col place-content-center">
                 <li className="m-2">
                     <CustomLink to="/home">Introdução</CustomLink>
@@ -22,7 +22,12 @@ export function NavBarForm() {
     )
 }
 
-function CustomLink({to = '', children = ''}) {
+interface CustomLinkProps {
+    to: string
+    children: React.ReactNode
+}
+
+function CustomLink({ to, children }: CustomLinkProps) {
     const resolvedPath = useResolvedPath(to)
     const isActive = useMatch({path: resolvedPath.pathname, end: true})
     const additionClasses = "p-3 text-xl hover:text-indigo-500 transition-all duration-400"
