@@ -8,15 +8,18 @@ export function SideBar() {
         dark:bg-zinc-800 dark:bg-opacity-80 dark:border-zinc-700">
             <div className='grid grid-flow-col lg:grid-flow-row place-items-center m-8'>
                 <div className='grid grid-flow-row place-items-center md:p-2 xl:p-0'>
-                    <ProfilePicture additionalTailwindClasses='mb-2 lg:m-5 w-40 h-40 lg:w-44 lg:h-44' />
+                    <ProfilePicture className='mb-2 lg:m-5 w-40 h-40 lg:w-44 lg:h-44' />
                     <h1 className="text-zinc-800 dark:text-zinc-200 text-xl text-center font-sfpmedium drop-shadow-sm">
                         Gustavo Barros da Silveira
                     </h1>
+                    <div className='mt-2 text-xs text-zinc-700 dark:text-zinc-300 font-semibold rounded-xl bg-zinc-100 dark:bg-zinc-900 shadow-default py-1 px-3'>
+                        Desenvolvedor
+                    </div>
                 </div>
                 
 
                 <div className='hidden md:flex lg:grid lg:justify-center place-items-center h-full'>
-                    <PillSeparator additionalTailwindClasses="rotate-90 lg:rotate-0 w-24 lg:m-5" />
+                    <PillSeparator className="rotate-90 lg:rotate-0 w-24 lg:m-5" />
 
                     <div className="lg:place-items-center">
                         <SideBarInfo />
