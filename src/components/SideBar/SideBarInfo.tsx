@@ -13,29 +13,34 @@ export function SideBarInfo() {
     return (
         <div className="grid grid-flow-col lg:grid-flow-row place-items-center">
             <div className="flex flex-col justify-center items-start">
+
                 <div className="grid grid-flow-col place-items-center">
                     
-                    <IconFrame icon={<Mail />} />
+                    <IconFrame icon={<Mail />} toCopy='guga082011@gmail.com' />
                     <span className="text-zinc-700 dark:text-zinc-300 text-xs text-left justify-center">
-                        E-Mail: guga082011@gmail.com
+                        guga082011@gmail.com
                     </span>
+
                 </div>
 
                 <div className="grid grid-flow-col place-items-center">
-                    <IconFrame
-                        icon={<MapPin />}
-                    />
+
+                    <IconFrame icon={<MapPin />} />
                     <span className="text-zinc-700 dark:text-zinc-300 text-xs text-left justify-center">
                         Rio do Sul - SC
                     </span>
+
                 </div>
 
                 <div className="grid grid-flow-col place-items-center">
-                    <IconFrame icon={<PhoneIcon />} />
+
+                    <IconFrame icon={<PhoneIcon />} toCopy='55049999910202' />
                     <span className="text-zinc-700 dark:text-zinc-300 text-xs text-left justify-center">
                         +55 (49) 9 9991-0202
                     </span>
+
                 </div>
+                
             </div>
 
             <PillSeparator className='rotate-90 lg:rotate-0 w-24 lg:m-5 lg:mb-7' />
