@@ -1,8 +1,8 @@
 import { Routes, Route, useLocation } from "react-router-dom";
-import { ContactContent } from "./content/ContactContent";
-import { HomeContent } from "./content/HomeContent";
-import { PortfolioContent } from "./content/PortfolioContent";
-import { ResumeContent } from "./content/ResumeContent";
+import { ContactContent } from "./content/Contact";
+import { HomeContent } from "./content/Home";
+import { PortfolioContent } from "./content/Portfolio";
+import { ResumeContent } from "./content/Resume";
 import { AnimatePresence } from "framer-motion";
 
 export function AnimatedRoutes() {
