@@ -1,4 +1,4 @@
-import { Globe, Link } from 'lucide-react'
+import { Github, Globe } from 'lucide-react'
 import { IconFrame } from '../IconFrame/IconFrame'
 import { twMerge } from 'tailwind-merge'
 
@@ -20,7 +20,7 @@ export function ImageMiniatureRoot({imageSource, projectUrl, siteUrl, title, cla
             </h4>
             <div className='opacity-0 group-hover:opacity-100 duration-300 absolute right-0 p-2 z-10'>
                 <div className='flex'>
-                    {projectUrl && (<IconFrame icon={<Link />} isSmall={true} href={projectUrl} className='m-0 ml-1' />)}
+                    {projectUrl && (<IconFrame icon={<Github />} isSmall={true} href={projectUrl} className='m-0 ml-1' />)}
                     {siteUrl && (<IconFrame icon={<Globe />} isSmall={true} href={siteUrl} className='m-0 ml-1' />)}
                 </div>
             </div>
