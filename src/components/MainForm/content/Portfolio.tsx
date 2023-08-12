@@ -31,7 +31,7 @@ export function PortfolioContent() {
 
             <ImageMiniature.Root 
                 imageSource={PORTFOLIO_IMG}
-                projectUrl="https://github.com/barrosgusta/ioslike_portfilio"
+                projectUrl="https://github.com/barrosgusta/ioslike_portfolio"
                 siteUrl="https://barrosgusta.netlify.app/"
                 title="Portfólio"
                 className="w-full"
