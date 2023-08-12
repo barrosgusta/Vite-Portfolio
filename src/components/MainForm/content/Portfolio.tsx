@@ -63,6 +63,7 @@ export function PortfolioContent() {
             <ImageMiniature.Root
                 imageSource={SPOTIFY_IMG}
                 projectUrl="https://github.com/barrosgusta/spotify-clone"
+                siteUrl="https://spotify-clone-git-main-barrosgusta.vercel.app/"
                 title="Spotify Clone"
                 className="w-full"
             >
