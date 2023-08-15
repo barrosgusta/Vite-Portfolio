@@ -1,8 +1,46 @@
 import { PillSeparator } from "../../PillSeparator";
 import { motion } from "framer-motion";
 import { SubmitButton } from "../../SubmitButton";
+import { Check } from "lucide-react";
+import { useState } from "react";
 
 export function ContactContent() { 
+    const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+    const [submitButtonText, setSubmitButtonText] = useState("Enviar");
+
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+
+    function handleOnSubmit(e: React.FormEvent<HTMLFormElement>) {
+        e.preventDefault(); 
+    
+        setSubmitButtonText("Enviando...");
+        const formData = new FormData(e.target as HTMLFormElement);
+        handleFormAction(formData);
+    }
+    
+    async function handleFormAction(formData: FormData) {
+        const res =  await fetch("https://getform.io/f/b4d41457-4df7-403e-b23f-c16a6efd1d4f", {
+            method: "POST",
+            body: formData,
+        })
+    
+        console.log(res);
+    
+        if (res.status === 200) {
+            setSubmitButtonText ("Mensagem Enviada!");
+            setIsFormSubmitted(true);
+            clearForm();
+        }
+    }
+
+    function clearForm() {
+        setName("");
+        setEmail("");
+        setMessage("");
+    }
+    
     return (
         <motion.div
             initial={{ opacity: 0 }}
@@ -40,7 +78,7 @@ export function ContactContent() {
                     </section>
                 </div>
 
-                <form action="https://getform.io/f/b4d41457-4df7-403e-b23f-c16a6efd1d4f" method="post" className="transition-all duration-300">
+                <form onSubmit={handleOnSubmit} className="transition-all duration-300">
                     <div className="mb-6">
                         <h2 className="font-bold text-zinc-800 dark:text-zinc-100 mb-2">Formulário de Contato</h2>
 
@@ -49,6 +87,9 @@ export function ContactContent() {
                             <div className="col-span-3">
                                 <input type="text" 
                                         name="name" 
+                                        value={name}
+                                        onChange={(e) => setName(e.target.value)}
+                                        required
                                         placeholder="Nome Completo"
                                         className="block w-full rounded-md p-3 text-zinc-800 shadow-sm border-zinc-300 placeholder:text-zinc-400 border-2 focus:border-indigo-600 text-sm leading-6
                                 dark:bg-zinc-800 dark:border-indigo-400 dark:text-zinc-100" />
@@ -57,22 +98,32 @@ export function ContactContent() {
                             <div className="col-span-3">
                                 <input type="email" 
                                         name="email" 
+                                        value={email}
+                                        onChange={(e) => setEmail(e.target.value)}
+                                        required
                                         placeholder="E-Mail"
                                         className="block w-full rounded-md p-3 text-zinc-800 shadow-sm border-zinc-300 placeholder:text-zinc-400 border-2 focus:border-indigo-600 text-sm leading-6
                                 dark:bg-zinc-800 dark:border-indigo-400 dark:text-zinc-100" />
                             </div>
 
                             <div className="col-span-6">
-                                <textarea name="message"
-                                            placeholder="Sua Mensagem"
-                                            className="block w-full min-h-[100px] max-h-52 rounded-md p-3 text-zinc-800 shadow-sm border-zinc-300 placeholder:text-zinc-400 border-2 focus:border-indigo-600 text-sm
-                                dark:bg-zinc-800 dark:border-indigo-400 dark:text-zinc-100" />
+                                <textarea 
+                                    name="message"
+                                    value={message}
+                                    onChange={(e) => setMessage(e.target.value)}
+                                    placeholder="Sua Mensagem"
+                                    className="block w-full min-h-[100px] max-h-52 rounded-md p-3 text-zinc-800 shadow-sm border-zinc-300 placeholder:text-zinc-400 border-2 focus:border-indigo-600 text-sm dark:bg-zinc-800 dark:border-indigo-400 dark:text-zinc-100" />
                             </div>
 
                         </div>
                     </div>
                     <SubmitButton
-                        text="Enviar"
+                        text={submitButtonText}
+                        icon={isFormSubmitted ? 
+                            <Check/> : 
+                            undefined
+                        }
+                        disabled={submitButtonText === "Enviando..." || "Mensagem Enviada!" ? true : false}
                         className="w-full"
                     />
                 </form>
