@@ -123,7 +123,7 @@ export function ContactContent() {
                             <Check/> : 
                             undefined
                         }
-                        disabled={submitButtonText === "Enviando..." || "Mensagem Enviada!" ? true : false}
+                        disabled={submitButtonText === "Enviando..." || submitButtonText === "Mensagem Enviada!" ? true : false}
                         className="w-full"
                     />
                 </form>
