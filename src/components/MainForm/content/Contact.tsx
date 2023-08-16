@@ -2,10 +2,12 @@ import { PillSeparator } from "../../PillSeparator";
 import { motion } from "framer-motion";
 import { SubmitButton } from "../../SubmitButton";
 import { Check } from "lucide-react";
-import { useState } from "react";
+import { useState } from "react"
+import { PropagateLoader } from "react-spinners";
 
 export function ContactContent() { 
     const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+    const [isFormPending, setIsFormPending] = useState(false);
     const [submitButtonText, setSubmitButtonText] = useState("Enviar");
 
     const [name, setName] = useState("");
@@ -15,7 +17,9 @@ export function ContactContent() {
     function handleOnSubmit(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault(); 
     
-        setSubmitButtonText("Enviando...");
+        setSubmitButtonText("");
+        setIsFormPending(true);
+
         const formData = new FormData(e.target as HTMLFormElement);
         handleFormAction(formData);
     }
@@ -28,11 +32,20 @@ export function ContactContent() {
     
         console.log(res);
     
+        setIsFormPending(false);
+
         if (res.status === 200) {
             setSubmitButtonText ("Mensagem Enviada!");
             setIsFormSubmitted(true);
             clearForm();
+        } else {
+            setSubmitButtonText("Erro ao Enviar");
         }
+
+        //to debug loading animation
+        // const delay = (ms: number) => new Promise(res => setTimeout(res, ms));
+
+        // await delay(10000);
     }
 
     function clearForm() {
@@ -118,14 +131,14 @@ export function ContactContent() {
                         </div>
                     </div>
                     <SubmitButton
-                        text={submitButtonText}
-                        icon={isFormSubmitted ? 
-                            <Check/> : 
-                            undefined
-                        }
-                        disabled={submitButtonText === "Enviando..." || submitButtonText === "Mensagem Enviada!" ? true : false}
+                        key={submitButtonText}
+                        disabled={isFormSubmitted || isFormPending ? true : false}
                         className="w-full"
-                    />
+                    >
+                        {isFormPending && <PropagateLoader color="white" className="mt-1 mb-5" />}
+                        {isFormSubmitted && <Check />}
+                        {submitButtonText}
+                    </SubmitButton>
                 </form>
             </div>
         </motion.div>       
