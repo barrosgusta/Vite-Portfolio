@@ -31,7 +31,7 @@ export function IconFrame({icon, isSmall = false, href = '', toCopy, className}:
     isSmall ? (
       <div 
         onClick={() => HandleSmallIconClick(href)} 
-        className={twMerge("rounded-md w-8 h-8 border hover:border-zinc-500 border-indigo-400 bg-zinc-100 m-2 shadow-default transition-all hover:bg-zinc-950 hover:shadow-none hover:cursor-pointer dark:bg-zinc-800", className)}
+        className={twMerge("rounded-md w-8 h-8 border hover:border-zinc-500 border-indigo-400 bg-zinc-100 m-2 shadow-default duration-75 hover:bg-zinc-950 hover:shadow-none hover:cursor-pointer dark:bg-zinc-800", className)}
       >
         <div className="flex items-center justify-center text-zinc-900 hover:text-zinc-50 text-center h-full dark:text-zinc-200">
           {icon}     
@@ -46,7 +46,7 @@ export function IconFrame({icon, isSmall = false, href = '', toCopy, className}:
 
         <div 
           onClick={toCopy ? () => HandleCopyClick(toCopy) : undefined}
-          className={twMerge("rounded-xl w-12 h-12 border border-indigo-400 bg-zinc-100 m-2 shadow-default dark:bg-zinc-800", toCopy && "duration-75 cursor-pointer hover:invert active:scale-95")} >
+          className={twMerge("rounded-xl w-12 h-12 border border-indigo-400 bg-zinc-100 m-2 shadow-default dark:bg-zinc-800", toCopy && "duration-75 cursor-pointer hover:invert active:scale-95", className)} >
 
           <div className="flex items-center justify-center text-zinc-900 text-xl text-center h-full dark:text-zinc-200">
             {icon}     
