@@ -179,7 +179,7 @@ export function PortfolioContent() {
                     key={project.id}
                     imageSource={project.imagesSource[0]}
                     title={project.title}
-                    className="w-full"
+                    className="w-full hover:shadow-2xl active:scale-95 active:shadow-sm"
                     onClick={() => {
                         setProject(project)
                         setIsOpen(true)
