@@ -5,7 +5,7 @@ import { Check } from "lucide-react";
 import { useState } from "react"
 import { PropagateLoader } from "react-spinners";
 
-export function ContactContent() { 
+export function ContactContent() {
     const [isFormSubmitted, setIsFormSubmitted] = useState(false);
     const [isFormPending, setIsFormPending] = useState(false);
     const [submitButtonText, setSubmitButtonText] = useState("Enviar");
@@ -14,38 +14,29 @@ export function ContactContent() {
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
 
-    function handleOnSubmit(e: React.FormEvent<HTMLFormElement>) {
+    async function handleOnSubmit(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault(); 
     
-        setSubmitButtonText("");
-        setIsFormPending(true);
+        try {
+            const formData = new FormData(e.target as HTMLFormElement);
 
-        const formData = new FormData(e.target as HTMLFormElement);
-        handleFormAction(formData);
-    }
-    
-    async function handleFormAction(formData: FormData) {
-        const res =  await fetch("https://getform.io/f/b4d41457-4df7-403e-b23f-c16a6efd1d4f", {
-            method: "POST",
-            body: formData,
-        })
-    
-        console.log(res);
-    
-        setIsFormPending(false);
+            setSubmitButtonText("");
+            setIsFormPending(true);
 
-        if (res.status === 200) {
+            await fetch("https://getform.io/f/b4d41457-4df7-403e-b23f-c16a6efd1d4f", {
+                method: "POST",
+                body: formData,
+            })
+    
+        } catch (error) {
+            setSubmitButtonText("Erro ao Enviar");
+            setIsFormPending(false);
+        } finally {
+            setIsFormPending(false);
             setSubmitButtonText ("Mensagem Enviada!");
             setIsFormSubmitted(true);
             clearForm();
-        } else {
-            setSubmitButtonText("Erro ao Enviar");
         }
-
-        //to debug loading animation
-        // const delay = (ms: number) => new Promise(res => setTimeout(res, ms));
-
-        // await delay(10000);
     }
 
     function clearForm() {
@@ -133,7 +124,7 @@ export function ContactContent() {
                     <SubmitButton
                         key={submitButtonText}
                         disabled={isFormSubmitted || isFormPending ? true : false}
-                        className="w-full"
+                        className="w-full gap-2"
                     >
                         {isFormPending && <PropagateLoader color="white" className="mt-1 mb-5" />}
                         {isFormSubmitted && <Check />}
