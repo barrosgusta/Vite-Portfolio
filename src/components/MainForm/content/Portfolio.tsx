@@ -97,7 +97,7 @@ export function PortfolioContent() {
             ),
             imagesSource: [SpotifyImg1, SpotifyImg2, SpotifyImg3, SpotifyImg4, SpotifyImg5],
             projectUrl: "https://github.com/barrosgusta/spotify-clone",
-            siteUrl: "https://barrosgusta.netlify.app/portfolio"
+            siteUrl: "https://spotify-clone-beta-ecru.vercel.app"
         },
         {
             id: 3,
