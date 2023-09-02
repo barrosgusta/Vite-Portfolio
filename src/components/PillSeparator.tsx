@@ -6,6 +6,6 @@ interface PillSeparatorProps {
 
 export function PillSeparator({ className }: PillSeparatorProps) {
     return (
-        <div className={twMerge("rounded-xl border-2 border-zinc-500 dark:border-zinc-200 h-0 shadow-md", className)}/>
+        <div className={twMerge("rounded-xl border border-zinc-500/60 dark:border-zinc-200/60 h-0", className)}/>
     )
 }
