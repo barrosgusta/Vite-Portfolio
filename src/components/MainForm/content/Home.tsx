@@ -1,9 +1,6 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { PillSeparator } from "../../PillSeparator";
-import { TextBox } from "../../TextBox";
-import { faReact } from "@fortawesome/free-brands-svg-icons";
-import { BiLogoDocker, BiLogoMongodb, BiLogoNodejs, BiLogoPhp, BiLogoPostgresql, BiLogoPython, BiLogoTailwindCss } from 'react-icons/bi';
 import { motion } from "framer-motion";
+import { TechBoxes } from "./TechBoxes";
 
 export function HomeContent() {
     return (
@@ -71,104 +68,18 @@ export function HomeContent() {
             </h2>
 
             <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-rows-2">
-
-                <TextBox.Root className="bg-sky-500 border-zinc-600 m-2">
-                    <TextBox.Icon icon={<FontAwesomeIcon icon={faReact} />} />
-                    <TextBox.Content.Root>
-                        <TextBox.Content.Title className="text-white">
-                            ReactJS
-                        </TextBox.Content.Title>
-                        <TextBox.Content.Description className="text-zinc-100 text-sm">
-                            Biblioteca JavaScript
-                        </TextBox.Content.Description>
-                    </TextBox.Content.Root>
-                </TextBox.Root>
-
-                <TextBox.Root className="bg-cyan-500 border-zinc-600 m-2">
-                    <TextBox.Icon icon={<BiLogoTailwindCss />} />
-                    <TextBox.Content.Root>
-                        <TextBox.Content.Title className="text-white">
-                            TailwindCSS
-                        </TextBox.Content.Title>
-                        <TextBox.Content.Description className="text-zinc-100 text-sm">
-                            Biblioteca de classes CSS
-                        </TextBox.Content.Description>
-                    </TextBox.Content.Root>
-                </TextBox.Root>
-
-                <TextBox.Root className="bg-green-500 border-zinc-600 m-2">
-                    <TextBox.Icon icon={<BiLogoNodejs />} />
-                    <TextBox.Content.Root>
-                        <TextBox.Content.Title className="text-white">
-                            NodeJS
-                        </TextBox.Content.Title>
-                        <TextBox.Content.Description className="text-zinc-100 text-sm">
-                            Runtime JavaScript
-                        </TextBox.Content.Description>
-                    </TextBox.Content.Root>
-                </TextBox.Root>
-
-                <TextBox.Root className="bg-gradient-to-tl from-yellow-600 to-blue-600 border-zinc-600 m-2">
-                    <TextBox.Icon icon={<BiLogoPython />} />
-                    <TextBox.Content.Root>
-                        <TextBox.Content.Title className="text-white">
-                            Python
-                        </TextBox.Content.Title>
-                        <TextBox.Content.Description className="text-zinc-100 text-sm">
-                            Linguagem alto nível
-                        </TextBox.Content.Description>
-                    </TextBox.Content.Root>
-                </TextBox.Root>
-
-                <TextBox.Root className="bg-blue-500 border-zinc-600 m-2">
-                    <TextBox.Icon icon={<BiLogoPhp />} />
-                    <TextBox.Content.Root>
-                        <TextBox.Content.Title className="text-white">
-                            PHP
-                        </TextBox.Content.Title>
-                        <TextBox.Content.Description className="text-zinc-100 text-sm">
-                            Backend Web
-                        </TextBox.Content.Description>
-                    </TextBox.Content.Root>
-                </TextBox.Root>
-
-                <TextBox.Root className="bg-green-600 border-zinc-600 m-2">
-                    <TextBox.Icon icon={<BiLogoMongodb />} />
-                    <TextBox.Content.Root>
-                        <TextBox.Content.Title className="text-white">
-                            MongoDB
-                        </TextBox.Content.Title>
-                        <TextBox.Content.Description className="text-zinc-100 text-sm">
-                            Banco de dados não relacional
-                        </TextBox.Content.Description>
-                    </TextBox.Content.Root>
-                </TextBox.Root>
-
-                <TextBox.Root className="bg-blue-600 border-zinc-600 m-2">
-                    <TextBox.Icon icon={<BiLogoPostgresql />} />
-                    <TextBox.Content.Root>
-                        <TextBox.Content.Title className="text-white">
-                            PostgreSQL
-                        </TextBox.Content.Title>
-                        <TextBox.Content.Description className="text-zinc-100 text-sm">
-                            Banco de dados relacional
-                        </TextBox.Content.Description>
-                    </TextBox.Content.Root>
-                </TextBox.Root>
-
-                <TextBox.Root className="bg-sky-600 border-zinc-600 m-2">
-                    <TextBox.Icon icon={<BiLogoDocker />} />
-                    <TextBox.Content.Root>
-                        <TextBox.Content.Title className="text-white">
-                            Docker
-                        </TextBox.Content.Title>
-                        <TextBox.Content.Description className="text-zinc-100 text-sm">
-                            Plataforma de virtualização
-                        </TextBox.Content.Description>
-                    </TextBox.Content.Root>
-                </TextBox.Root>
-
-
+                <TechBoxes.ReactJs />
+                <TechBoxes.NextJs />
+                <TechBoxes.TailwindCss />
+                <TechBoxes.NodeJs />
+                <TechBoxes.Php />
+                <TechBoxes.Python />
+                <TechBoxes.Delphi />
+                <TechBoxes.MongoDb />
+                <TechBoxes.PostgreSql />
+                <TechBoxes.Docker />
+                <TechBoxes.JavaScript />
+                <TechBoxes.TypeScript />
             </section>
         </div>
         </motion.div>       
