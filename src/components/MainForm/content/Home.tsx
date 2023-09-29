@@ -70,16 +70,16 @@ export function HomeContent() {
             <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-rows-2">
                 <TechBoxes.ReactJs />
                 <TechBoxes.NextJs />
-                <TechBoxes.TailwindCss />
                 <TechBoxes.NodeJs />
+                <TechBoxes.Swift />
                 <TechBoxes.Php />
                 <TechBoxes.Python />
                 <TechBoxes.Delphi />
+                <TechBoxes.JavaScript />
+                <TechBoxes.TypeScript />
                 <TechBoxes.MongoDb />
                 <TechBoxes.PostgreSql />
                 <TechBoxes.Docker />
-                <TechBoxes.JavaScript />
-                <TechBoxes.TypeScript />
             </section>
         </div>
         </motion.div>       
