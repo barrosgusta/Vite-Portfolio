@@ -33,8 +33,8 @@ export function ResumeContent() {
 
                 <ul className="ml-[2.92rem]">
                     <li className="mb-3">
-                        <h4 className="font-semibold">IPM Sistemas | Programador - Delphi</h4>
-                        <span className="opacity-70 text-sm">
+                        <h4 className="font-semibold">IPM Sistemas | Desenvolvedor Delphi</h4>
+                        <span className="opacity-70 text-xs uppercase">
                             Outubro de 2022 — Julho de 2023
                         </span>
 
@@ -44,6 +44,23 @@ export function ResumeContent() {
                             </p>
                             <p>
                                 Neste projeto eu contribui com diversas melhorias de desempenho e usabilidade além de implementar novas funcionalidades para facilitar as migrações.
+                            </p>
+                        </div>
+
+                    </li>
+
+                    <li className="mb-3">
+                        <h4 className="font-semibold">Freelancer | Autônomo</h4>
+                        <span className="opacity-70 text-xs uppercase">
+                            Setembro de 2023 — Até o momento
+                        </span>
+
+                        <div className="flex flex-col mt-2 gap-y-1">
+                            <p>
+                                Enfrentei momentos difíceis durante um período de 'lay-off', no qual até perdi minha moradia. Isso me impulsionou a buscar novas oportunidades profissionais.
+                            </p>
+                            <p>
+                                Atualmente, estou dedicando meu tempo a projetos pessoais privados, com o objetivo de gerar renda e adquirir experiência, enquanto busco uma posição em regime CLT ou como PJ.
                             </p>
                         </div>
 
@@ -64,7 +81,7 @@ export function ResumeContent() {
                     <li className="mb-3">
                         <h4 className="font-semibold">Unidavi | Sistemas de Informação</h4>
 
-                        <span className="opacity-70 text-sm">
+                        <span className="opacity-70 text-xs uppercase">
                             Março de 2022 - Dezembro de 2025
                         </span>
                         
@@ -93,15 +110,15 @@ export function ResumeContent() {
                 <ul className="ml-[2.92rem]">
                     <li className="mb-3">
                         <h4 className="font-semibold">Click | Montagem e Manutenção de Computadores</h4>
-                        <span className="opacity-70 text-sm">Fevereiro de 2016 — Dezembro de 2016</span>
+                        <span className="opacity-70 text-xs uppercase">Fevereiro de 2016 — Dezembro de 2016</span>
                     </li>
                     <li className="mb-3">
                         <h4 className="font-semibold">KNN Idiomas | Inglês</h4>
-                        <span className="opacity-70 text-sm">Julho de 2019 — Agosto de 2021</span>
+                        <span className="opacity-70 text-xs uppercase">Julho de 2019 — Agosto de 2021</span>
                     </li>  
                     <li className="mb-3">
                         <h4 className="font-semibold">IPM Sistemas | Delphi</h4>
-                        <span className="opacity-70 text-sm">Agosto de 2022 — Setembro de 2022</span>
+                        <span className="opacity-70 text-xs uppercase">Agosto de 2022 — Setembro de 2022</span>
                     </li>                    
                 </ul>
 
