@@ -30,9 +30,6 @@ module.exports = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
-      screens: {
-        "dark": { raw: "(prefers-color-scheme: dark)" },
-      },
       boxShadow: {
         'default': '0 0px 15px 0px rgb(0, 0, 0, 0.2)',
       },
