@@ -17,25 +17,25 @@ export function SideBarInfo() {
                 <div className="grid grid-flow-col place-items-center">
                     
                     <IconFrame icon={<Mail />} toCopy='guga082011@gmail.com' />
-                    <span className="text-zinc-700 dark:text-zinc-300 text-xs text-left justify-center">
+                    <span className="text-zinc-700 dark:text-zinc-300 text-xs font-sans text-left justify-center">
                         guga082011@gmail.com
                     </span>
 
                 </div>
-
+{/* 
                 <div className="grid grid-flow-col place-items-center">
 
                     <IconFrame icon={<MapPin />} />
                     <span className="text-zinc-700 dark:text-zinc-300 text-xs text-left justify-center">
-                        Rio do Sul - SC
+                        Rio do Sul - SC || Chapadão do Lageado - SC
                     </span>
 
-                </div>
+                </div> */}
 
                 <div className="grid grid-flow-col place-items-center">
 
                     <IconFrame icon={<PhoneIcon />} toCopy='55049999910202' />
-                    <span className="text-zinc-700 dark:text-zinc-300 text-xs text-left justify-center">
+                    <span className="text-zinc-700 dark:text-zinc-300 text-xs font-sans text-left justify-center">
                         +55 (49) 9 9991-0202
                     </span>
 
@@ -54,18 +54,18 @@ export function SideBarInfo() {
                 <IconFrame
                     icon={<FontAwesomeIcon icon={faLinkedin} />}
                     isSmall
-                    href="https://www.linkedin.com/in/gustavo-barros-91b805253/"
+                    href="https://www.linkedin.com/in/barrosgusta/"
                 />
                 <IconFrame
                     icon={<FontAwesomeIcon icon={faInstagram} />}
                     isSmall
                     href="https://www.instagram.com/barros.gusta/"
                 />
-                <IconFrame
+                {/* <IconFrame
                     icon={<FontAwesomeIcon icon={faTwitter} />}
                     isSmall
                     href="https://twitter.com/barros_gusta/"
-                />
+                /> */}
             </div>
         </div>
     );
