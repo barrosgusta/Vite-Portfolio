@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { BiLogoJavascript, BiLogoTypescript, BiLogoDocker, BiLogoPython, BiLogoMongodb, BiLogoPostgresql, BiLogoPhp, BiLogoNodejs, BiLogoTailwindCss } from "react-icons/bi"
 import { SiNextdotjs, SiDelphi } from "react-icons/si"
 import { ShadcnUiIcon } from "./Portfolio"
-import { TbBrandMysql, TbBrandRadixUi, TbBrandStripe } from "react-icons/tb"
+import { TbBrandMysql, TbBrandRadixUi, TbBrandStripe, TbBrandSwift } from "react-icons/tb"
 import { RiOpenaiFill, RiSupabaseLine } from "react-icons/ri"
 
 function ReactJs() {
@@ -48,7 +48,7 @@ function JavaScript() {
                     JavaScript
                 </TextBox.Content.Title>
                 <TextBox.Content.Description className="text-zinc-900 text-sm">
-                    Linguagem de programação interpretada
+                    Linguagem interpretada
                 </TextBox.Content.Description>
             </TextBox.Content.Root>
         </TextBox.Root>
@@ -64,7 +64,7 @@ function TypeScript() {
                     TypeScript
                 </TextBox.Content.Title>
                 <TextBox.Content.Description className="text-zinc-100 text-sm">
-                    Linguagem de programação tipada
+                    Linguagem tipada
                 </TextBox.Content.Description>
             </TextBox.Content.Root>
         </TextBox.Root>
@@ -295,6 +295,22 @@ function MySql() {
     )    
 }
 
+function Swift() {
+    return (
+        <TextBox.Root className="bg-orange-600 border-zinc-600 m-2">
+            <TextBox.Icon icon={<TbBrandSwift />} />
+            <TextBox.Content.Root>
+                <TextBox.Content.Title className="text-white">
+                    Swift
+                </TextBox.Content.Title>
+                <TextBox.Content.Description className="text-zinc-100 text-sm">
+                    Linguagem para o ecosistema Apple
+                </TextBox.Content.Description>
+            </TextBox.Content.Root>
+        </TextBox.Root>
+    )    
+}
+
 
 export const TechBoxes = {
     ReactJs,
@@ -314,6 +330,7 @@ export const TechBoxes = {
     OpenAi,
     Supabase,
     Stripe,
-    MySql
+    MySql,
+    Swift
 }
 
