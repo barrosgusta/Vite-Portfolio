@@ -3,10 +3,10 @@ import { IconFrame } from '../IconFrame/IconFrame';
 import {
     faInstagram,
     faLinkedin,
-    faTwitter,
+    // faTwitter,
 } from '@fortawesome/free-brands-svg-icons';
 import { PillSeparator } from '../PillSeparator';
-import { Mail, MapPin, PhoneIcon } from 'lucide-react';
+import { Mail, PhoneIcon } from 'lucide-react';
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
 
 export function SideBarInfo() {
