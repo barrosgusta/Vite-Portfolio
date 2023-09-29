@@ -17,6 +17,15 @@ import BrasileiraoManagerImg1 from "@/assets/images/projects/brasileirao_manager
 import PhpCrudImg1 from "@/assets/images/projects/php-crud/form.png";
 import PhpCrudImg2 from "@/assets/images/projects/php-crud/home.png";
 import PhpCrudImg3 from "@/assets/images/projects/php-crud/table_view.png";
+import EcomAdmImg1 from "@/assets/images/projects/your-ecommerce-admin/initial.png";
+import EcomAdmImg2 from "@/assets/images/projects/your-ecommerce-admin/dashboard.png";
+import EcomAdmImg3 from "@/assets/images/projects/your-ecommerce-admin/settings.png"
+import EcomAdmImg4 from "@/assets/images/projects/your-ecommerce-admin/clerk.png"
+import EcomStrImg1 from "@/assets/images/projects/your-ecommerce-store/main.png"
+import EcomStrImg2 from "@/assets/images/projects/your-ecommerce-store/product.png"
+import EcomStrImg3 from "@/assets/images/projects/your-ecommerce-store/cart.png"
+import EcomStrImg4 from "@/assets/images/projects/your-ecommerce-store/product-preview.png"
+import UnidaviLogo from "@/assets/images/projects/unidavi/logo.png"
 
 type Project = {
     id: number,
@@ -98,6 +107,66 @@ export function PortfolioContent() {
             imagesSource: [SpotifyImg1, SpotifyImg2, SpotifyImg3, SpotifyImg4, SpotifyImg5],
             projectUrl: "https://github.com/barrosgusta/spotify-clone",
             siteUrl: "https://spotify-clone-beta-ecru.vercel.app"
+        },
+        {
+            id: 2,
+            title: "E-Commerce Admin",
+            description: (
+                <>
+                    Aplicação web de gerenciamento de lojas e-commerce com rotas API RESTful para integração com as lojas.
+                </>
+                ),
+            techBoxes: (
+                <>
+                    <TechBoxes.Stripe />
+                    <TechBoxes.ReactJs />
+                    <TechBoxes.NextJs />
+                    <TechBoxes.TypeScript />
+                    <TechBoxes.TailwindCss />
+                    <TechBoxes.ShadcnUi />
+                </>
+            ),
+            imagesSource: [EcomAdmImg1, EcomAdmImg2, EcomAdmImg3, EcomAdmImg4],
+            projectUrl: "https://github.com/barrosgusta/your-ecommerce-admin",
+            // siteUrl: "https://spotify-clone-beta-ecru.vercel.app"
+        },
+        {
+            id: 2,
+            title: "E-Commerce Store",
+            description: (
+                <>
+                    Aplicação web de e-commerce aonde foi utilizado as rotas API do <strong>E-Commerce Admin</strong>. 
+                </>
+                ),
+            techBoxes: (
+                <>
+                    <TechBoxes.ReactJs />
+                    <TechBoxes.NextJs />
+                    <TechBoxes.TypeScript />
+                    <TechBoxes.TailwindCss />
+                    <TechBoxes.ShadcnUi />
+                </>
+            ),
+            imagesSource: [EcomStrImg1, EcomStrImg2, EcomStrImg3, EcomStrImg4],
+            projectUrl: "https://github.com/barrosgusta/your-ecommerce-store",
+            // siteUrl: "https://spotify-clone-beta-ecru.vercel.app"
+        },
+        {
+            id: 2,
+            title: "Unidavi",
+            description: (
+                <>
+                    W.I.P
+                </>
+                ),
+            techBoxes: (
+                <>
+                    <TechBoxes.TailwindCss />
+                </>
+            ),
+            imagesSource: [UnidaviLogo],
+            // projectUrl: "https://github.com/barrosgusta/your-ecommerce-store",
+            // siteUrl: "https://spotify-clone-beta-ecru.vercel.app"
         },
         {
             id: 3,
