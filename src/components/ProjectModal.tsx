@@ -74,10 +74,10 @@ export function ProjectModal({ imagesSource, projectUrl, siteUrl, onClose, isOpe
 
     return (
         <Dialog open={isOpen} onOpenChange={onOpenChange}>
-            <DialogContent className="w-screen h-screen lg:h-auto lg:max-h-[60vh] min-h-fit p-0">
-                <ScrollArea>
+            <DialogContent className="w-screen h-screen lg:h-auto lg:max-h-[60vh] min-h-fit p-0 xl:max-w-[1500px]">
+                <ScrollArea className="lg:overflow-visible">
                     <div className="m-6">
-                        {(projectUrl || siteUrl) && (<div className="hidden lg:flex items-center justify-center h-28 backdrop-blur-3xl fixed left-[50%] top-[-35%] z-50 max-w-fit translate-x-[-50%] border border-indigo-500 bg-white/75 p-6 shadow-lg duration-200 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%] sm:rounded-xl md:w-full dark:bg-zinc-900/75">
+                        {(projectUrl || siteUrl) && (<div className="hidden w-fit lg:block absolute z-50 top-1/2 left-1/2 right-1/2 -translate-x-1/2 -translate-y-[480%] duration-200 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%]">
                             {projectUrl && (<IconFrame href={projectUrl} isSmall icon={<GithubIcon size={35} />} className="w-16 h-16 rounded-xl" />)}
                             {siteUrl && (<IconFrame href={siteUrl} isSmall icon={<Globe2 size={35} />} className="w-16 h-16 rounded-xl" />)}
                         </div>)}
