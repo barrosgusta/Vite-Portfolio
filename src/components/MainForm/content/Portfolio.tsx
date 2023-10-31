@@ -4,31 +4,11 @@ import { PillSeparator } from "../../PillSeparator.tsx";
 import { motion } from "framer-motion";
 import { ReactNode, useState } from "react";
 import { TechBoxes } from "./TechBoxes.tsx";
+import { BrasileiraoManagerImages, ChatbotAIImages, ProjetoClassificadoImages, SpotifyCloneImages, TrucoGameImages, UnidaviImages, YourEcommerceAdminImages, YourEcommerceStoreImages } from "@/assets/images/imports.ts";
 
-import ChatbotImg1 from "@/assets/images/projects/chatbot_ai/demo.gif";
-import PortfolioImg1 from "@/assets/images/projects/portfolio/demo.gif";
-import SpotifyImg1 from "@/assets/images/projects/spotify-clone/main.png";
-import SpotifyImg2 from "@/assets/images/projects/spotify-clone/account.png";
-import SpotifyImg3 from "@/assets/images/projects/spotify-clone/search.png";
-import SpotifyImg4 from "@/assets/images/projects/spotify-clone/stripe.png";
-import SpotifyImg5 from "@/assets/images/projects/spotify-clone/supabase.png";
-import TrucoGameImg1 from "@/assets/images/projects/delphi-truco/main.png";
-import BrasileiraoManagerImg1 from "@/assets/images/projects/brasileirao_manager/main.png";
-import PhpCrudImg1 from "@/assets/images/projects/php-crud/form.png";
-import PhpCrudImg2 from "@/assets/images/projects/php-crud/home.png";
-import PhpCrudImg3 from "@/assets/images/projects/php-crud/table_view.png";
-import EcomAdmImg1 from "@/assets/images/projects/your-ecommerce-admin/initial.png";
-import EcomAdmImg2 from "@/assets/images/projects/your-ecommerce-admin/dashboard.png";
-import EcomAdmImg3 from "@/assets/images/projects/your-ecommerce-admin/settings.png"
-import EcomAdmImg4 from "@/assets/images/projects/your-ecommerce-admin/clerk.png"
-import EcomStrImg1 from "@/assets/images/projects/your-ecommerce-store/main.png"
-import EcomStrImg2 from "@/assets/images/projects/your-ecommerce-store/product.png"
-import EcomStrImg3 from "@/assets/images/projects/your-ecommerce-store/cart.png"
-import EcomStrImg4 from "@/assets/images/projects/your-ecommerce-store/product-preview.png"
-import UnidaviLogo from "@/assets/images/projects/unidavi/logo.png"
+
 
 type Project = {
-    id: number,
     title: string,
     description: ReactNode,
     techBoxes?: ReactNode,
@@ -50,24 +30,26 @@ export function ShadcnUiIcon() {
 export function PortfolioContent() {
     const projects: Project[] = [
         {
-            id: 0,
-            title: "Portfólio",
-            description: "Portfólio web feito em React.js utilizando Vite, TailwindCSS, Framer Motion e React Router. Neste projeto foi aplicando conceitos de boas práticas de UI/UX e reutilização de componentes.",
+            title: "Projeto Classificado",
+            description: "Projeto fullstack de um site responsivo de venda de carros com enfase em carros modificados ou carros projeto. Foi criado toda a modelagem do banco  \
+                com o Prisma ORM, rotas API pelo Next.js API Routes, autenticação com Clerk, integração com o Stripe para pagamentos, integração com o Cloudinary para armazenamento das imagens, \
+                cadastro com descrição em Markdown, e muito mais. Foi utilizado também API's externas para integração com a tabela FIPE.",
             techBoxes: (
                 <>
-                    <TechBoxes.Docker />
+                    <TechBoxes.NextJs />
                     <TechBoxes.ReactJs />
+                    <TechBoxes.Prisma />
                     <TechBoxes.TypeScript />
                     <TechBoxes.ShadcnUi />
                     <TechBoxes.TailwindCss />
+                    <TechBoxes.Stripe />
+                    <TechBoxes.MySql />
                 </>
             ),
-            imagesSource: [PortfolioImg1],
-            projectUrl: "https://github.com/barrosgusta/ioslike_portfolio",
-            siteUrl: "https://barrosgusta.netlify.app/home"
+            imagesSource: ProjetoClassificadoImages,
+            siteUrl: "https://projetoclassificado.vercel.app"
         },
         {
-            id: 1,
             title: "ChatBot AI",
             description: "ChatBot feito em Next.js utilizando TailwindCSS e Shadcn/UI. Neste projeto foi utilizado a API da OpenAI e usado-a como base para o desenvolvimento do ChatBot.",
             techBoxes: (
@@ -80,11 +62,10 @@ export function PortfolioContent() {
                     <TechBoxes.OpenAi />
                 </>
             ),
-            imagesSource: [ChatbotImg1],
+            imagesSource: ChatbotAIImages,
             projectUrl: "https://github.com/barrosgusta/chatbot_ai"
         },
         {
-            id: 2,
             title: "Spotify Clone",
             description: (
                 <>
@@ -104,16 +85,15 @@ export function PortfolioContent() {
                     <TechBoxes.PostgreSql />
                 </>
             ),
-            imagesSource: [SpotifyImg1, SpotifyImg2, SpotifyImg3, SpotifyImg4, SpotifyImg5],
+            imagesSource: SpotifyCloneImages,
             projectUrl: "https://github.com/barrosgusta/spotify-clone",
             siteUrl: "https://spotify-clone-beta-ecru.vercel.app"
         },
         {
-            id: 2,
             title: "E-Commerce Admin",
             description: (
                 <>
-                    Aplicação web de gerenciamento de lojas e-commerce com rotas API RESTful para integração com as lojas.
+                    Aplicação web de gerenciamento de lojas e-commerce com rotas API restful para integração com as lojas.
                 </>
                 ),
             techBoxes: (
@@ -126,12 +106,10 @@ export function PortfolioContent() {
                     <TechBoxes.ShadcnUi />
                 </>
             ),
-            imagesSource: [EcomAdmImg1, EcomAdmImg2, EcomAdmImg3, EcomAdmImg4],
+            imagesSource: YourEcommerceAdminImages,
             projectUrl: "https://github.com/barrosgusta/your-ecommerce-admin",
-            // siteUrl: "https://spotify-clone-beta-ecru.vercel.app"
         },
         {
-            id: 2,
             title: "E-Commerce Store",
             description: (
                 <>
@@ -147,12 +125,10 @@ export function PortfolioContent() {
                     <TechBoxes.ShadcnUi />
                 </>
             ),
-            imagesSource: [EcomStrImg1, EcomStrImg2, EcomStrImg3, EcomStrImg4],
+            imagesSource: YourEcommerceStoreImages,
             projectUrl: "https://github.com/barrosgusta/your-ecommerce-store",
-            // siteUrl: "https://spotify-clone-beta-ecru.vercel.app"
         },
         {
-            id: 2,
             title: "Unidavi",
             description: (
                 <>
@@ -164,40 +140,24 @@ export function PortfolioContent() {
                     <TechBoxes.TailwindCss />
                 </>
             ),
-            imagesSource: [UnidaviLogo],
+            imagesSource: UnidaviImages,
             // projectUrl: "https://github.com/barrosgusta/your-ecommerce-store",
-            // siteUrl: "https://spotify-clone-beta-ecru.vercel.app"
         },
         {
-            id: 3,
             title: "Truco",
             description: "Jogo de Truco feito em Delphi 7.",
             techBoxes: (
                 <TechBoxes.Delphi />
             ),
-            imagesSource: [TrucoGameImg1],
+            imagesSource: TrucoGameImages,
             projectUrl: "https://github.com/barrosgusta/delphi-truco"
         },
         {
-            id: 4,
             title: "Brasileirão Manager",
             description: "Gerenciador de campeonatos com foco no Brasileirão feito em Pascal utilizando o Pascalzim. Neste projeto foi aplicando conceitos de estrutura de dados como pilha, fila e lista, assim como a utilização de ponteiros.",
-            imagesSource: [BrasileiraoManagerImg1],
+            imagesSource: BrasileiraoManagerImages,
             projectUrl: "https://github.com/barrosgusta/brasileirao_manager"
         },
-        {
-            id: 5,
-            title: "Crud PHP",
-            description: "Crud feito em PHP utilizando banco de dados MySQL. Neste projeto foi aplicando a arquitetura MVC (Model, View, Controller).",
-            techBoxes: (
-                <>
-                    <TechBoxes.Php />
-                    <TechBoxes.MySql />
-                </>
-            ),
-            imagesSource: [PhpCrudImg1, PhpCrudImg2, PhpCrudImg3],
-            projectUrl: "https://github.com/barrosgusta/php-crud"
-        }
     ];
 
 
@@ -245,7 +205,7 @@ export function PortfolioContent() {
 
             {projects.map((project) => (
                 <ImageMiniature.Root
-                    key={project.id}
+                    key={project.title}
                     imageSource={project.imagesSource[0]}
                     title={project.title}
                     className="w-full hover:shadow-2xl active:scale-95 active:shadow-sm"
