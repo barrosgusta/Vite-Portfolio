@@ -2,7 +2,7 @@ import { TextBox } from "@/components/TextBox"
 import { faReact } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { BiLogoJavascript, BiLogoTypescript, BiLogoDocker, BiLogoPython, BiLogoMongodb, BiLogoPostgresql, BiLogoPhp, BiLogoNodejs, BiLogoTailwindCss } from "react-icons/bi"
-import { SiNextdotjs, SiDelphi } from "react-icons/si"
+import { SiNextdotjs, SiDelphi, SiPrisma } from "react-icons/si"
 import { ShadcnUiIcon } from "./Portfolio"
 import { TbBrandMysql, TbBrandRadixUi, TbBrandStripe, TbBrandSwift } from "react-icons/tb"
 import { RiOpenaiFill, RiSupabaseLine } from "react-icons/ri"
@@ -311,6 +311,22 @@ function Swift() {
     )    
 }
 
+function Prisma() {
+    return (
+        <TextBox.Root className="bg-indigo-600 border-zinc-600 m-2">
+            <TextBox.Icon className="text-white" icon={<SiPrisma />} />
+            <TextBox.Content.Root>
+                <TextBox.Content.Title className="text-white">
+                    Prisma
+                </TextBox.Content.Title>
+                <TextBox.Content.Description className="text-zinc-100 text-sm">
+                   DB ORM
+                </TextBox.Content.Description>
+            </TextBox.Content.Root>
+        </TextBox.Root>
+ )    
+}
+
 
 export const TechBoxes = {
     ReactJs,
@@ -331,6 +347,7 @@ export const TechBoxes = {
     Supabase,
     Stripe,
     MySql,
-    Swift
+    Swift,
+    Prisma
 }
 
