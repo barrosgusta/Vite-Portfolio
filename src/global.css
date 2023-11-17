@@ -23,10 +23,10 @@
     font-family: 'SF Pro Display', sans-serif;
 }
 
-:root {
+/* :root {
     height: 100%;
     top: 0;
-}
+} */
 
 body {
     -webkit-font-smoothing: subpixel-antialiased;

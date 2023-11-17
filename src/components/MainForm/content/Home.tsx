@@ -21,44 +21,24 @@ export function HomeContent() {
 
             <section className="text-zinc-700 dark:text-zinc-300 mt-3 text-left">
                 
-                <h2 className="font-semibold text-xl">
+                <h2 className="font-semibold text-3xl">
                     Olá, conheça seu próximo <strong>Desenvolvedor/Programador Full Stack</strong>:
                 </h2>
 
                 <br />
 
-                <div className="flex flex-col gap-y-2">
-                    <p>
-                        Começei a programar na faculdade em 2022, mas já era apaixonado por tecnologia desde criança, minha jornada no mundo da programação tem sido uma experiência gratificante e estimulante. Enquanto crescia, sempre fui fascinado pelas maravilhas da tecnologia, de computadores a smartphones, e sabia, lá no fundo, que queria fazer parte da magia por trás dessas inovações.
-                    </p>
+                <div className="flex flex-col gap-y-3 text-xl">
+                    <p>Como um amante de tecnologia desde a infância, encontrei minha paixão por programação e estou determinado a ter sucesso na carreira.</p>
 
-                    <p>
-                        Quando finalmente tive a oportunidade de estudar programação na faculdade, foi um sonho que se tornou realidade. Fiquei empolgado e ansioso quando entrei no mundo da programação, armado com minha paixão por tecnologia e sede de conhecimento. Parecia a combinação perfeita entre meu amor de infância por aparelhos e meu desejo recém-descoberto de criar e construir.
-                    </p>
-    
-                    <p>
-                        Embora eu fosse um iniciante no campo da programação, abordei o assunto com determinação e curiosidade. Cada linha de código que eu escrevia e cada problema que eu resolvia parecia uma pequena vitória. Logo percebi que a programação não era apenas uma habilidade técnica, mas também uma saída criativa, que me permitia dar vida às minhas ideias em um ambiente digital.
-                    </p>
+                    <p>Desde pequeno, sempre tive curiosidade em saber como as coisas funcionavam. Essa curiosidade me levou a estudar tecnologia e, mais tarde, a me apaixonar por programação.</p>
 
-                    <p>
-                        A cada projeto e tarefa, eu me via constantemente aprendendo e ultrapassando meus limites. Descobri o poder dos algoritmos e das estruturas de dados, a elegância da programação orientada a objetos e as infinitas possibilidades do desenvolvimento de aplicativos e da Web. Foi como desvendar um quebra-cabeça complexo e encontrar alegria no processo de juntar todas as peças.
-                    </p>
+                    <p>Meu primeiro contato com a programação foi quando aprendi a criar modificações para jogos que eu gostava. Foi um processo desafiador, mas muito gratificante. Percebi que não era só sobre habilidades técnicas, mas também sobre criatividade.</p>
 
-                    <p>
-                        Mas o que realmente tornou minha jornada especial foi a comunidade solidária e colaborativa de colegas programadores que encontrei ao longo do caminho. Conectei-me com pessoas que compartilhavam a mesma paixão pela tecnologia e estavam sempre dispostas a me ajudar. Juntos, enfrentamos desafios de codificação, fizemos brainstorming de soluções inovadoras e comemoramos os sucessos uns dos outros.
-                    </p>
+                    <p>A cada projeto que terminava, sentia um grande prazer e orgulho. Era como aprender uma nova música no piano. A cada nova nota que aprendia, ampliava meu conhecimento e minha capacidade de criar.</p>
 
-                    <p>
-                        Ao refletir sobre minha jornada, sinto-me muito grato pelas oportunidades que a programação me proporcionou. Ela me permitiu transformar meu fascínio de infância em um conjunto de habilidades concretas e em uma possível carreira. Mas, além disso, despertou em mim o desejo de aprender, crescer e contribuir continuamente para o mundo da tecnologia, que está em constante evolução.
-                    </p>
+                    <p>Sou uma pessoa que aprende rápido tudo que me interessa. Todos com quem já trabalhei me elogiam por isso.</p>
 
-                    <p>
-                        Estou animado com o futuro, onde poderei aproveitar minhas habilidades de programação para causar um impacto positivo, seja desenvolvendo aplicativos que simplificam a vida das pessoas, criando soluções inovadoras para problemas do mundo real ou contribuindo para os avanços de ponta que moldam nosso cenário digital.
-                    </p>
-
-                    <p>
-                        Começar minha jornada de programação na faculdade em 2022 pode ter sido um início tardio em comparação com alguns, mas minha paixão por tecnologia sempre foi uma força motriz.
-                    </p>
+                    <p>Atualmente, estou super dedicado a ter a expertise em tudo que o mercado atual pede. Estou confiante de que, com meu conhecimento e minha capacidade de aprendizado, serei capaz de alcançar meus objetivos profissionais.</p>
                 </div>
             </section>
 
