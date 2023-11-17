@@ -2,7 +2,6 @@ import { Background } from "./components/Background"
 import { MainForm } from "./components/MainForm/MainForm"
 import { NavBarBottom } from "./components/NavBar/NavBarBottom"
 import { SideBar } from "./components/SideBar/SideBar"
-import { SideBarInfo } from "./components/SideBar/SideBarInfo"
 import { ThemeToggle } from "./components/ThemeToogle"
 
 function App() {
