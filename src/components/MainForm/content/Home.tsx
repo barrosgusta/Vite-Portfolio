@@ -21,7 +21,7 @@ export function HomeContent() {
 
             <section className="text-zinc-700 dark:text-zinc-300 mt-3 text-left">
                 
-                <h2 className="font-semibold text-3xl">
+                <h2 className="font-semibold text-2xl md:text-3xl">
                     Olá, conheça seu próximo <strong>Desenvolvedor/Programador Full Stack</strong>:
                 </h2>
 
@@ -43,7 +43,7 @@ export function HomeContent() {
             </section>
 
 
-            <h2 className="text-zinc-700 dark:text-zinc-100 text-2xl font-bold mt-7 mb-4">
+            <h2 className="text-zinc-700 dark:text-zinc-100 text-2xl md:text-3xl font-bold mt-7 mb-4 text-left">
                 Tecnologias que eu uso ou já usei:
             </h2>
 
