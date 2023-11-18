@@ -6,7 +6,7 @@ export function SideBar() {
         <div className="backdrop-blur-lg backdrop-saturate-200 rounded-xl bg-zinc-100/60 border border-zinc-400 shadow-default dark:bg-zinc-800/60 dark:border-zinc-700 h-full w-full lg:w-auto">
             <div className="grid grid-flow-col lg:grid-flow-row place-items-center gap-5 my-7 mx-5">
                 <div className="grid grid-flow-row place-items-center justify-self-end lg:justify-self-auto">
-                    <ProfilePicture className='w-40 h-40 lg:w-44 lg:h-44' />
+                    <ProfilePicture className='w-32 h-32 lg:w-44 lg:h-44' />
                 </div>
 
                 <div className="grid lg:grid-flow-row lg:gap-5 place-items-center md:place-content-around justify-self-start lg:justify-self-auto h-full">
