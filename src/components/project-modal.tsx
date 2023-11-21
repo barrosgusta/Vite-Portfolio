@@ -49,7 +49,7 @@ export function ProjectModalTechnologies({ children }: { children: ReactNode }) 
                     </h3>
                 </div>
                 <PillSeparator className="mt-3 mb-1" />
-                <section className="grid grid-cols-1">
+                <section className="grid grid-cols-1 gap-3 p-2">
                     {children}
                 </section>
             </div>
