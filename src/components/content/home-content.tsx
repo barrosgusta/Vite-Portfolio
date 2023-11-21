@@ -9,7 +9,7 @@ export function HomeContent() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
         >
-        <div className="text-justify m-7">
+        <div className="text-justify">
             <div className="grid place-content-start">
                 <div className="grid">
                     <h1 className="text-zinc-800 dark:text-zinc-100 text-3xl font-bold">
@@ -47,7 +47,7 @@ export function HomeContent() {
                 Tecnologias que eu uso ou já usei:
             </h2>
 
-            <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-rows-2">
+            <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-rows-2 gap-4">
                 <TechBoxes.ReactJs />
                 <TechBoxes.NextJs />
                 <TechBoxes.NodeJs />

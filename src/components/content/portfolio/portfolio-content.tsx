@@ -36,7 +36,7 @@ export function PortfolioContent() {
             </ProjectModalContent>
         </ProjectModal>
 
-        <div className="text-justify m-7">
+        <div className="text-justify">
             <div className="grid place-content-start">
                 <div className="grid">
                     <h1 className="text-zinc-800 dark:text-zinc-100 text-3xl font-bold">

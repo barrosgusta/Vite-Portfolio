@@ -9,7 +9,7 @@ import { ShadcnUiIcon } from "@/components/icons/shadcn-ui-icon"
 
 function ReactJs() {
     return (
-        <TextBox.Root className="bg-sky-500 border-zinc-300/60 dark:border-zinc-700/60 m-2">
+        <TextBox.Root className="bg-sky-500 border-zinc-300/60 dark:border-zinc-700/60">
             <TextBox.Icon icon={<FontAwesomeIcon icon={faReact} />} />
             <TextBox.Content.Root>
                 <TextBox.Content.Title className="text-white">
@@ -25,7 +25,7 @@ function ReactJs() {
 
 function NextJs() {
     return (
-        <TextBox.Root className="bg-black border-zinc-300/60 dark:border-zinc-700/60 m-2">
+        <TextBox.Root className="bg-black border-zinc-300/60 dark:border-zinc-700/60">
             <TextBox.Icon icon={<SiNextdotjs />} />
             <TextBox.Content.Root>
                 <TextBox.Content.Title className="text-white">
@@ -41,7 +41,7 @@ function NextJs() {
 
 function JavaScript() {
     return (
-        <TextBox.Root className="bg-[rgb(232,235,78)] border-zinc-300/60 dark:border-zinc-700/60 m-2">
+        <TextBox.Root className="bg-[rgb(232,235,78)] border-zinc-300/60 dark:border-zinc-700/60">
             <TextBox.Icon className="text-black" icon={<BiLogoJavascript />} />
             <TextBox.Content.Root>
                 <TextBox.Content.Title className="text-black">
@@ -57,7 +57,7 @@ function JavaScript() {
 
 function TypeScript() {
     return (
-        <TextBox.Root className="bg-sky-500 border-zinc-300/60 dark:border-zinc-700/60 m-2">
+        <TextBox.Root className="bg-sky-500 border-zinc-300/60 dark:border-zinc-700/60">
             <TextBox.Icon icon={<BiLogoTypescript />} />
             <TextBox.Content.Root>
                 <TextBox.Content.Title className="text-white">
@@ -73,7 +73,7 @@ function TypeScript() {
 
 function Docker() {
     return (
-        <TextBox.Root className="bg-sky-600 border-zinc-300/60 dark:border-zinc-700/60 m-2">
+        <TextBox.Root className="bg-sky-600 border-zinc-300/60 dark:border-zinc-700/60">
             <TextBox.Icon icon={<BiLogoDocker />} />
             <TextBox.Content.Root>
                 <TextBox.Content.Title className="text-white">
@@ -89,7 +89,7 @@ function Docker() {
 
 function Python() {
     return (
-        <TextBox.Root className="bg-gradient-to-tl from-yellow-600 to-blue-600 border-zinc-300/60 dark:border-zinc-700/60 m-2">
+        <TextBox.Root className="bg-gradient-to-tl from-yellow-600 to-blue-600 border-zinc-300/60 dark:border-zinc-700/60">
             <TextBox.Icon icon={<BiLogoPython />} />
             <TextBox.Content.Root>
                 <TextBox.Content.Title className="text-white">
@@ -105,7 +105,7 @@ function Python() {
 
 function Delphi() {
     return (
-        <TextBox.Root className="bg-red-500 border-zinc-300/60 dark:border-zinc-700/60 m-2">
+        <TextBox.Root className="bg-red-500 border-zinc-300/60 dark:border-zinc-700/60">
             <TextBox.Icon icon={<SiDelphi />} />
             <TextBox.Content.Root>
                 <TextBox.Content.Title className="text-white">
@@ -121,7 +121,7 @@ function Delphi() {
 
 function MongoDb() {
     return (
-        <TextBox.Root className="bg-green-600 border-zinc-300/60 dark:border-zinc-700/60 m-2">
+        <TextBox.Root className="bg-green-600 border-zinc-300/60 dark:border-zinc-700/60">
             <TextBox.Icon icon={<BiLogoMongodb />} />
             <TextBox.Content.Root>
                 <TextBox.Content.Title className="text-white">
@@ -137,7 +137,7 @@ function MongoDb() {
 
 function PostgreSql() {
     return (
-        <TextBox.Root className="bg-blue-600 border-zinc-300/60 dark:border-zinc-700/60 m-2">
+        <TextBox.Root className="bg-blue-600 border-zinc-300/60 dark:border-zinc-700/60">
             <TextBox.Icon icon={<BiLogoPostgresql />} />
             <TextBox.Content.Root>
                 <TextBox.Content.Title className="text-white">
@@ -153,7 +153,7 @@ function PostgreSql() {
 
 function Php() {
     return (
-        <TextBox.Root className="bg-blue-500 border-zinc-300/60 dark:border-zinc-700/60 m-2">
+        <TextBox.Root className="bg-blue-500 border-zinc-300/60 dark:border-zinc-700/60">
             <TextBox.Icon icon={<BiLogoPhp />} />
             <TextBox.Content.Root>
                 <TextBox.Content.Title className="text-white">
@@ -169,7 +169,7 @@ function Php() {
 
 function NodeJs() {
     return (
-        <TextBox.Root className="bg-green-500 border-zinc-300/60 dark:border-zinc-700/60 m-2">
+        <TextBox.Root className="bg-green-500 border-zinc-300/60 dark:border-zinc-700/60">
             <TextBox.Icon icon={<BiLogoNodejs />} />
             <TextBox.Content.Root>
                 <TextBox.Content.Title className="text-white">
@@ -185,7 +185,7 @@ function NodeJs() {
 
 function ShadcnUi() {
     return (
-        <TextBox.Root className="bg-black border-zinc-300/60 dark:border-zinc-700/60 m-2">
+        <TextBox.Root className="bg-black border-zinc-300/60 dark:border-zinc-700/60">
             <TextBox.Icon icon={<ShadcnUiIcon />} />
             <TextBox.Content.Root>
                 <TextBox.Content.Title className="text-white">
@@ -201,7 +201,7 @@ function ShadcnUi() {
 
 function RadixUi() {
     return (
-        <TextBox.Root className="bg-black border-zinc-300/60 dark:border-zinc-700/60 m-2">
+        <TextBox.Root className="bg-black border-zinc-300/60 dark:border-zinc-700/60">
             <TextBox.Icon icon={<TbBrandRadixUi />} />
             <TextBox.Content.Root>
                 <TextBox.Content.Title className="text-white">
@@ -217,7 +217,7 @@ function RadixUi() {
 
 function TailwindCss() {
     return (
-        <TextBox.Root className="bg-cyan-500 border-zinc-300/60 dark:border-zinc-700/60 m-2">
+        <TextBox.Root className="bg-cyan-500 border-zinc-300/60 dark:border-zinc-700/60">
             <TextBox.Icon icon={<BiLogoTailwindCss />} />
             <TextBox.Content.Root>
                 <TextBox.Content.Title className="text-white">
@@ -233,7 +233,7 @@ function TailwindCss() {
 
 function OpenAi() {
     return (
-        <TextBox.Root className="bg-indigo-500 border-zinc-300/60 dark:border-zinc-700/60 m-2">
+        <TextBox.Root className="bg-indigo-500 border-zinc-300/60 dark:border-zinc-700/60">
             <TextBox.Icon icon={<RiOpenaiFill />} />
             <TextBox.Content.Root>
                 <TextBox.Content.Title className="text-white">
@@ -249,7 +249,7 @@ function OpenAi() {
 
 function Supabase() {
     return (
-        <TextBox.Root className="bg-green-500 border-zinc-300/60 dark:border-zinc-700/60 m-2">
+        <TextBox.Root className="bg-green-500 border-zinc-300/60 dark:border-zinc-700/60">
             <TextBox.Icon icon={<RiSupabaseLine />} />
             <TextBox.Content.Root>
                 <TextBox.Content.Title className="text-white">
@@ -265,7 +265,7 @@ function Supabase() {
 
 function Stripe() {
     return (
-        <TextBox.Root className="bg-purple-500 border-zinc-300/60 dark:border-zinc-700/60 m-2">
+        <TextBox.Root className="bg-purple-500 border-zinc-300/60 dark:border-zinc-700/60">
             <TextBox.Icon icon={<TbBrandStripe />} />
             <TextBox.Content.Root>
                 <TextBox.Content.Title className="text-white">
@@ -281,7 +281,7 @@ function Stripe() {
 
 function MySql() {
     return (
-        <TextBox.Root className="bg-gradient-to-tl from-orange-600 to-blue-600 border-zinc-300/60 dark:border-zinc-700/60 m-2">
+        <TextBox.Root className="bg-gradient-to-tl from-orange-600 to-blue-600 border-zinc-300/60 dark:border-zinc-700/60">
             <TextBox.Icon icon={<TbBrandMysql />} />
             <TextBox.Content.Root>
                 <TextBox.Content.Title className="text-white">
@@ -297,14 +297,14 @@ function MySql() {
 
 function Swift() {
     return (
-        <TextBox.Root className="bg-orange-600 border-zinc-300/60 dark:border-zinc-700/60 m-2">
+        <TextBox.Root className="bg-orange-600 border-zinc-300/60 dark:border-zinc-700/60">
             <TextBox.Icon icon={<TbBrandSwift />} />
             <TextBox.Content.Root>
                 <TextBox.Content.Title className="text-white">
                     Swift
                 </TextBox.Content.Title>
                 <TextBox.Content.Description className="text-zinc-100 text-sm">
-                    Linguagem para o ecosistema Apple
+                    Linguagem nativa Apple
                 </TextBox.Content.Description>
             </TextBox.Content.Root>
         </TextBox.Root>
@@ -313,7 +313,7 @@ function Swift() {
 
 function Prisma() {
     return (
-        <TextBox.Root className="bg-indigo-600 border-zinc-300/60 dark:border-zinc-700/60 m-2">
+        <TextBox.Root className="bg-indigo-600 border-zinc-300/60 dark:border-zinc-700/60">
             <TextBox.Icon className="text-white" icon={<SiPrisma />} />
             <TextBox.Content.Root>
                 <TextBox.Content.Title className="text-white">

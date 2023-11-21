@@ -10,7 +10,7 @@ export function ResumeContent() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="text-left m-7"
+            className="text-left"
         >
 
             <div className="grid place-content-start">
