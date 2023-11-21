@@ -1,4 +1,4 @@
-export function Background() {
+export default function Background() {
     return (
         <div className="z-0 fixed bg-indigo-50 dark:bg-indigo-950 w-screen h-screen transition-colors duration-75 overflow-y-auto">
             <div className="z-10 overflow-y-auto">

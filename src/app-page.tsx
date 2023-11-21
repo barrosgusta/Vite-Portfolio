@@ -1,8 +1,9 @@
-import { Background } from "./components/background"
-import MainWindow from "./components/main-window"
-import { NavBarBottom } from "./components/nav-bar/nav-bar-bottom"
-import { SideBar } from "./components/side-bar/side-bar"
-import { ThemeToggle } from "./components/theme-toogle"
+import Background from "@/components/background";
+import MainWindow from "@/components/main-window";
+import { NavBarBottom } from "@/components/nav-bar/nav-bar-bottom";
+import { SideBar } from "@/components/side-bar/side-bar";
+import { ThemeToggle } from "@/components/theme-toogle";
+
 
 export default function AppPage() {
   return (
