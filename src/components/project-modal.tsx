@@ -41,7 +41,7 @@ export function ProjectModalDescription({ children }: { children: ReactNode }) {
 
 export function ProjectModalTechnologies({ children }: { children: ReactNode }) {
     return (
-        <ScrollArea className="flex flex-col items-center justify-center bg-white dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-800 shadow-default rounded-2xl max-h-72">
+        <ScrollArea className="flex flex-col items-center justify-center bg-white dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-800 shadow-default-sm rounded-2xl max-h-72">
             <div className="p-4">
                 <div className="">
                     <h3 className="text-lg text-center font-bold leading-none dark:text-white">
