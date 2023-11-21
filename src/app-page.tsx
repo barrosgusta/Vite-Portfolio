@@ -1,4 +1,4 @@
-import Background from "@/components/background";
+import Background from "@/components/app-background";
 import MainWindow from "@/components/main-window";
 import { NavBarBottom } from "@/components/nav-bar/nav-bar-bottom";
 import { SideBar } from "@/components/side-bar/side-bar";
