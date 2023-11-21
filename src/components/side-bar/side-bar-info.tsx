@@ -1,5 +1,5 @@
-import { IconWithActions } from '../icon-with-actions';
-import { Github, Instagram, Linkedin, Mail, Phone } from 'lucide-react';
+import { IconWithActions } from "../icon-with-actions";
+import { Github, Instagram, Linkedin, Mail, Phone } from "lucide-react";
 
 export function SideBarInfo() {
     return (
@@ -20,8 +20,8 @@ export function SideBarInfo() {
                     
                     href="https://www.instagram.com/barros.gusta/"
                 />
-                <IconWithActions icon={<Mail size={25} />} toCopy='guga082011@gmail.com' />
-                <IconWithActions icon={<Phone size={25} />} toCopy='55049999910202' />
+                <IconWithActions icon={<Mail size={25} />} toCopy="guga082011@gmail.com" />
+                <IconWithActions icon={<Phone size={25} />} toCopy="55049999910202" />
             </div>
         </div>
     );

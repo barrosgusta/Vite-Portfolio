@@ -1,11 +1,11 @@
-/** @type {import('tailwindcss').Config} */
+/** @type {import("tailwindcss").Config} */
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
 	],
   theme: {
     container: {
@@ -49,8 +49,8 @@ module.exports = {
         "bg-breathe-12": "breathe 29s infinite",
       },
       boxShadow: {
-        'default': '0 0px 25px 0px rgb(50, 50, 50, 0.3)',
-        'default-sm': '0 0px 4px 0px rgb(35, 35, 35, 0.3)',
+        "default": "0 0px 25px 0px rgb(50, 50, 50, 0.3)",
+        "default-sm": "0 0px 4px 0px rgb(35, 35, 35, 0.3)",
       },
     },
   },

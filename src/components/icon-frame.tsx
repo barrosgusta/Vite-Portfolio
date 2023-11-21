@@ -9,7 +9,7 @@ interface IconFrameProps {
   className?: string
 }
 
-export function IconFrame({icon, isSmall = false, href = '', toCopy, className}: IconFrameProps) {
+export function IconFrame({icon, isSmall = false, href = "", toCopy, className}: IconFrameProps) {
   const [isCopied, setIsCopied] = useState(false)
 
   const HandleSmallIconClick = (url : string) => {

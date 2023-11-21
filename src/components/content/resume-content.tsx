@@ -63,7 +63,7 @@ export function ResumeContent() {
                                 Atualmente, me dedico a ganhar experiência. Meus projetos são desenvolvidos usando pipelines de CI/CD e criando Testes Automatizados para atender aos padrões atuais do setor.
                             </p>
                             <p>
-                                As tecnologias que estou utilizando são: <strong>React.js, Next.js, Jest, Node.js, API 's Restful, Bancos de dados relacionais e não relacionais</strong>.
+                                As tecnologias que estou utilizando são: <strong>React.js, Next.js, Jest, Node.js, API "s Restful, Bancos de dados relacionais e não relacionais</strong>.
                             </p>
                         </div>
 

@@ -8,7 +8,7 @@ interface IconFrameProps {
   className?: string
 }
 
-export function IconWithActions({icon, href = '', toCopy, className}: IconFrameProps) {
+export function IconWithActions({icon, href = "", toCopy, className}: IconFrameProps) {
   const [isCopied, setIsCopied] = useState(false)
 
   const handleOpenUrl = (url : string) => {

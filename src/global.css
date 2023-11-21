@@ -3,24 +3,24 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'SF Pro Display' ;
-    src: url('./assets/fonts/SFPRODISPLAYREGULAR.OTF') format('opentype');
+    font-family: "SF Pro Display" ;
+    src: url("./assets/fonts/SFPRODISPLAYREGULAR.OTF") format("opentype");
 }
 
 @font-face {
-    font-family: 'SF Pro Display' ;
-    src: url('./assets/fonts/SFPRODISPLAYBOLD.OTF') format('opentype');
+    font-family: "SF Pro Display" ;
+    src: url("./assets/fonts/SFPRODISPLAYBOLD.OTF") format("opentype");
     font-weight: 700;
 }
 
 @font-face {
-    font-family: 'SF Pro Display' ;
-    src: url('./assets/fonts/SFPRODISPLAYMEDIUM.OTF') format('opentype');
+    font-family: "SF Pro Display" ;
+    src: url("./assets/fonts/SFPRODISPLAYMEDIUM.OTF") format("opentype");
     font-weight: 600;
 }
 
 * {
-    font-family: 'SF Pro Display', sans-serif;
+    font-family: "SF Pro Display", sans-serif;
 }
 
 /* :root {
