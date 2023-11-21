@@ -1,7 +1,7 @@
 import { faBook, faSuitcase } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { PillSeparator } from "../../PillSeparator";
-import { IconFrame } from "../../IconFrame/IconFrame";
+import { PillSeparator } from "../pill-separator";
+import { IconFrame } from "../icon-frame";
 import { motion } from "framer-motion";
 
 export function ResumeContent() {

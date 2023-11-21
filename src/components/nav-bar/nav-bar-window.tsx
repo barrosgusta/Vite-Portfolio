@@ -1,6 +1,6 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 
-export function NavBarForm() {
+export function NavBarWindow() {
     return (
         <nav className="lg:grid hidden w-fit bg-zinc-100 rounded-bl-xl border border-zinc-200 rounded-tr-xl shadow-lg duration-75 z-50
         dark:bg-zinc-800 dark:border-zinc-700 font-semibold">

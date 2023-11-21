@@ -30,6 +30,22 @@ export const ProjetoClassificadoImages = [
     ajustes_2
 ]
 
+import select_hero_dark from "@/assets/images/projects/jornada-do-heroi/select_hero_dark.png"
+import select_hero_light from "@/assets/images/projects/jornada-do-heroi/select_hero_light.png"
+import battle_dark from "@/assets/images/projects/jornada-do-heroi/battle_dark.png"
+import battle_light from "@/assets/images/projects/jornada-do-heroi/battle_light.png"
+import hero_info_dark from "@/assets/images/projects/jornada-do-heroi/hero_info_dark.png"
+import hero_info_light from "@/assets/images/projects/jornada-do-heroi/hero_info_light.png"
+
+export const JornadaDoHeroiImages = [
+    select_hero_dark,
+    select_hero_light,
+    battle_dark,
+    battle_light,
+    hero_info_dark,
+    hero_info_light
+]
+
 import ecom_store_1 from "@/assets/images/projects/your-ecommerce-store/main.png"
 import ecom_store_2 from "@/assets/images/projects/your-ecommerce-store/product.png"
 import ecom_store_3 from "@/assets/images/projects/your-ecommerce-store/cart.png"

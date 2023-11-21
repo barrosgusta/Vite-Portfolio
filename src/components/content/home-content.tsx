@@ -1,6 +1,6 @@
-import { PillSeparator } from "../../PillSeparator";
+import TechBoxes from "@/components/tech-box";
+import { PillSeparator } from "../pill-separator";
 import { motion } from "framer-motion";
-import { TechBoxes } from "./TechBoxes";
 
 export function HomeContent() {
     return (

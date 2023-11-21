@@ -1,10 +1,10 @@
-import { Background } from "./components/Background"
-import { MainForm } from "./components/MainForm/MainForm"
-import { NavBarBottom } from "./components/NavBar/NavBarBottom"
-import { SideBar } from "./components/SideBar/SideBar"
-import { ThemeToggle } from "./components/ThemeToogle"
+import { Background } from "./components/background"
+import MainWindow from "./components/main-window"
+import { NavBarBottom } from "./components/nav-bar/nav-bar-bottom"
+import { SideBar } from "./components/side-bar/side-bar"
+import { ThemeToggle } from "./components/theme-toogle"
 
-function App() {
+export default function AppPage() {
   return (
     <>
       <Background />
@@ -15,10 +15,10 @@ function App() {
         </div>
       </div>
 
-      <div className="p-[20px] pb-20 lg:p-10 xl:p-36 xl:pt-20 ">
+      <div className="p-[20px] pb-20 lg:p-10 xl:p-36 xl:pt-20">
         <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start gap-4 xl:gap-7 transition-all duration-75">
           <SideBar />
-          <MainForm />
+          <MainWindow />
         </div>
       </div>
 
@@ -26,5 +26,3 @@ function App() {
     </>
   )
 }
-
-export default App

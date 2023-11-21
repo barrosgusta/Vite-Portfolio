@@ -1,9 +1,9 @@
 import { Dialog, DialogContent } from "@/components/ui/dialog";
-import ImageCarousel from "./ImageCarousel";
+import ImageCarousel from "./image-carousell";
 import { ReactNode } from "react";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { PillSeparator } from "./PillSeparator";
-import { IconFrame } from "./IconFrame/IconFrame";
+import { PillSeparator } from "./pill-separator";
+import { IconFrame } from "./icon-frame";
 import { GithubIcon, Globe2 } from "lucide-react";
 
 type ProjectModalProps = {

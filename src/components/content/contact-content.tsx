@@ -1,6 +1,6 @@
-import { PillSeparator } from "../../PillSeparator";
+import { PillSeparator } from "../pill-separator";
 import { motion } from "framer-motion";
-import { SubmitButton } from "../../SubmitButton";
+import { SubmitButton } from "../submit-button";
 import { Check } from "lucide-react";
 import { useState } from "react"
 import { PropagateLoader } from "react-spinners";
@@ -62,7 +62,7 @@ export function ContactContent() {
                 </div>
 
 
-                <div className="hidden md:flex justify-center items-center ">
+                {/* <div className="hidden md:flex justify-center items-center ">
                     <section className="mb-5 rounded-xl overflow-hidden border border-indigo-400 bg-zinc-100 shadow-default
                     dark:bg-zinc-800">
                         <figure className="hidden xl:block -hue-rotate-[-120deg] dark:grayscale dark:invert">
@@ -80,7 +80,7 @@ export function ContactContent() {
                             </iframe>
                         </figure>
                     </section>
-                </div>
+                </div> */}
 
                 <form onSubmit={handleOnSubmit} className="transition-all duration-300">
                     <div className="mb-6">

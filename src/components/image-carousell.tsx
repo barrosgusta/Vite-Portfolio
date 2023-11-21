@@ -33,7 +33,7 @@ export default function ImageCarousel({ images, className }: ImageCarouselProps)
                 style={{ transform: `translateX(-${currImage * 100}%)` }}
             >
                 {images.map((image) => (
-                    <img className="block object-cover object-center" key={image} src={image} alt="image" />
+                    <img className="block object-cover" key={image} src={image} alt="image" />
                 ))}
             </div>
             <div className={twMerge("absolute inset-0 flex items-center justify-between duration-300", images.length === 1 && "hidden")}>
