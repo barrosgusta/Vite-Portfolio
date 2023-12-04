@@ -53,7 +53,7 @@ export function ResumeContent() {
                     </li>
 
                     <li className="mb-3">
-                        <h4 className="font-semibold text-xl">Freelancer | Autônomo</h4>
+                        <h4 className="font-semibold text-xl">Freelance | Full-Stack WEB Developer</h4>
                         <span className="opacity-70 text-xs uppercase">
                             Setembro de 2023 — Até o momento
                         </span>

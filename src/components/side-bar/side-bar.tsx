@@ -3,7 +3,7 @@ import { SideBarInfo } from "./side-bar-info";
 
 export function SideBar() {
     return (
-        <div className="backdrop-blur-lg backdrop-saturate-200 backdrop-brightness-150 dark:backdrop-brightness-100 rounded-xl bg-zinc-100/60 border border-zinc-300/60 shadow-default dark:bg-zinc-800/60 dark:border-zinc-700/60 h-full w-full lg:w-auto">
+        <div className="backdrop-blur-lg backdrop-saturate-200 backdrop-brightness-150 backdrop-contrast-125 dark:backdrop-brightness-75 rounded-xl bg-zinc-100/60 border border-zinc-300/60 shadow-default dark:bg-zinc-800/60 dark:border-zinc-700/60 h-full w-full lg:w-auto">
             <div className="grid grid-flow-col lg:grid-flow-row place-items-center gap-5 my-7 mx-5">
                 <div className="grid grid-flow-row place-items-center justify-self-end lg:justify-self-auto">
                     <ProfilePicture className="w-32 h-32 lg:w-44 lg:h-44" />

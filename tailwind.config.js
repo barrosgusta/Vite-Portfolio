@@ -26,8 +26,8 @@ module.exports = {
           to: { height: 0 },
         },
         "breathe": {
-          "0%, 100%": { opacity: 1, transform: "scale(1)" },
-          "50%": { opacity: 0.8, transform: "scale(1.2)"  },
+          "0%, 100%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.2)"  },
         }
       },
       animation: {

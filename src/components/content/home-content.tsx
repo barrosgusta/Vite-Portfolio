@@ -34,9 +34,9 @@ export function HomeContent() {
 
                     <p>Meu primeiro contato com a programação foi quando aprendi a criar modificações para jogos que eu gostava. Foi um processo desafiador, mas muito gratificante. Percebi que não era só sobre habilidades técnicas, mas também sobre criatividade.</p>
 
-                    <p>A cada projeto que terminava, sentia um grande prazer e orgulho. Era como aprender uma nova música no piano. A cada nova nota que aprendia, ampliava meu conhecimento e minha capacidade de criar.</p>
+                    <p>A cada projeto que terminava, sentia um grande prazer e orgulho. Era como aprender uma nova música no piano. A cada novo acorde que aprendia, ampliava meu conhecimento e minha capacidade de criar.</p>
 
-                    <p>Sou uma pessoa que aprende rápido tudo que me interessa. Todos com quem já trabalhei me elogiam por isso.</p>
+                    <p>Sou uma pessoa que aprende rápido. Todos com quem já trabalhei me elogiam por isso.</p>
 
                     <p>Atualmente, estou super dedicado a ter a expertise em tudo que o mercado atual pede. Estou confiante de que, com meu conhecimento e minha capacidade de aprendizado, serei capaz de alcançar meus objetivos profissionais.</p>
                 </div>

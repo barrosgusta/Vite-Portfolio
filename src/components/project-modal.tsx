@@ -74,7 +74,7 @@ export function ProjectModal({ imagesSource, projectUrl, siteUrl, onClose, isOpe
 
     return (
         <Dialog open={isOpen} onOpenChange={onOpenChange}>
-            <DialogContent className="w-screen h-screen lg:h-auto lg:max-h-[60vh] min-h-fit p-0 xl:max-w-[1500px]">
+            <DialogContent className="w-screen h-[100dvh] lg:h-auto lg:max-h-[60vh] min-h-fit p-0 xl:max-w-[1500px]">
                 <ScrollArea className="lg:overflow-visible">
                     <div className="m-6">
                         {(projectUrl || siteUrl) && (<div className="hidden w-fit lg:block absolute z-50 top-1/2 left-1/2 right-1/2 -translate-x-1/2 -translate-y-[480%] duration-200 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%]">
