@@ -53,12 +53,14 @@ export function HomeContent() {
                 <TechBoxes.NodeJs />
                 <TechBoxes.Swift />
                 <TechBoxes.Php />
+                <TechBoxes.Rust />
                 <TechBoxes.Python />
                 <TechBoxes.Delphi />
                 <TechBoxes.JavaScript />
                 <TechBoxes.TypeScript />
                 <TechBoxes.MongoDb />
                 <TechBoxes.PostgreSql />
+                <TechBoxes.MySql />
                 <TechBoxes.Docker />
             </section>
         </div>
