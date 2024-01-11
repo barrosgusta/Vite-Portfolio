@@ -127,21 +127,21 @@ export const projects: Project[] = [
         imagesSource: YourEcommerceStoreImages,
         projectUrl: "https://github.com/barrosgusta/your-ecommerce-store",
     },
-    {
-        title: "Unidavi",
-        description: (
-            <>
-                W.I.P
-            </>
-            ),
-        techBoxes: (
-            <>
-                <TechBoxes.TailwindCss />
-            </>
-        ),
-        imagesSource: UnidaviImages,
-        // projectUrl: "https://github.com/barrosgusta/your-ecommerce-store",
-    },
+    // {
+    //     title: "Unidavi",
+    //     description: (
+    //         <>
+    //             Respositório com os projetos desenvolvidos durante o curso de Sistemas de Informação na Unidavi.
+    //         </>
+    //         ),
+    //     techBoxes: (
+    //         <>
+    //             <TechBoxes.TailwindCss />
+    //         </>
+    //     ),
+    //     imagesSource: UnidaviImages,
+    //     // projectUrl: "https://github.com/barrosgusta/your-ecommerce-store",
+    // },
     {
         title: "Truco",
         description: "Jogo de Truco feito em Delphi 7.",
