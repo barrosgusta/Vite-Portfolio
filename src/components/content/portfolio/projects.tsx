@@ -1,4 +1,4 @@
-import { ProjetoClassificadoImages, ChatbotAIImages, SpotifyCloneImages, YourEcommerceAdminImages, YourEcommerceStoreImages, UnidaviImages, TrucoGameImages, BrasileiraoManagerImages, JornadaDoHeroiImages } from "@/components/content/portfolio/images";
+import { ProjetoClassificadoImages, ChatbotAIImages, SpotifyCloneImages, YourEcommerceAdminImages, YourEcommerceStoreImages, TrucoGameImages, BrasileiraoManagerImages, JornadaDoHeroiImages } from "@/components/content/portfolio/images";
 import TechBoxes from "@/components/tech-box";
 import { ReactNode } from "react";
 
