@@ -3,7 +3,7 @@ import { faReact } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { BiLogoJavascript, BiLogoTypescript, BiLogoDocker, BiLogoPython, BiLogoMongodb, BiLogoPostgresql, BiLogoPhp, BiLogoNodejs, BiLogoTailwindCss } from "react-icons/bi"
 import { SiNextdotjs, SiDelphi, SiPrisma } from "react-icons/si"
-import { TbBrandMysql, TbBrandRadixUi, TbBrandStripe, TbBrandSwift } from "react-icons/tb"
+import { TbBrandMysql, TbBrandRadixUi, TbBrandRust, TbBrandStripe, TbBrandSwift } from "react-icons/tb"
 import { RiOpenaiFill, RiSupabaseLine } from "react-icons/ri"
 import { ShadcnUiIcon } from "@/components/icons/shadcn-ui-icon"
 
@@ -327,6 +327,22 @@ function Prisma() {
  )    
 }
 
+function Rust() {
+    return (
+        <TextBox.Root className="bg-orange-600 border-zinc-300/60 dark:border-zinc-700/60">
+            <TextBox.Icon icon={<TbBrandRust />} />
+            <TextBox.Content.Root>
+                <TextBox.Content.Title className="text-white">
+                    Rust
+                </TextBox.Content.Title>
+                <TextBox.Content.Description className="text-zinc-100 text-sm">
+                    Linguagem alto nível
+                </TextBox.Content.Description>
+            </TextBox.Content.Root>
+        </TextBox.Root>
+    )    
+}
+
 
 const TechBoxes = {
     ReactJs,
@@ -348,7 +364,8 @@ const TechBoxes = {
     Stripe,
     MySql,
     Swift,
-    Prisma
+    Prisma,
+    Rust
 }
 
 export default TechBoxes;
