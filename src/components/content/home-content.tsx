@@ -44,7 +44,7 @@ export function HomeContent() {
 
 
             <h2 className="text-zinc-700 dark:text-zinc-100 text-2xl md:text-3xl font-bold mt-7 mb-4 text-left">
-                Tecnologias que eu uso ou já usei:
+                Tecnologias que eu utilizo ou já tive que utilizar:
             </h2>
 
             <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-rows-2 gap-4">
