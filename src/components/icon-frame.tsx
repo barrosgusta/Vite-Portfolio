@@ -46,7 +46,7 @@ export function IconFrame({icon, isSmall = false, href = "", toCopy, className}:
 
         <div 
           onClick={toCopy ? () => HandleCopyClick(toCopy) : undefined}
-          className={twMerge("rounded-xl w-12 h-12 border border-indigo-400 bg-white m-2 shadow-default-sm dark:bg-zinc-950", toCopy && "duration-75 cursor-pointer hover:invert active:scale-95", className)} >
+          className={twMerge("rounded-xl w-12 h-12 border-2 border-indigo-500 bg-white m-2 shadow-default-sm dark:bg-zinc-800", toCopy && "duration-75 cursor-pointer hover:invert active:scale-95", className)} >
 
           <div className="flex items-center justify-center text-zinc-900 text-xl text-center h-full dark:text-zinc-200">
             {icon}     
