@@ -28,7 +28,15 @@ module.exports = {
         "breathe": {
           "0%, 100%": { transform: "scale(1)" },
           "50%": { transform: "scale(1.2)"  },
-        }
+        },
+        "breathe-blur": {
+          "0%, 100%": { filter: "blur(1px)" },
+          "50%": { filter: "blur(10px)" },
+        },
+        "chroma": {
+          "0%": { filter: "hue-rotate(360deg)" },
+          "100%": { filter: "hue-rotate(0deg)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -47,9 +55,12 @@ module.exports = {
         "bg-breathe-10": "breathe 18s infinite",
         "bg-breathe-11": "breathe 24s infinite",
         "bg-breathe-12": "breathe 29s infinite",
+        "bg-breathe-blur": "breathe-blur 21s infinite",
+        "chroma": "chroma 120s infinite",
+        "blur-chroma": "breathe-blur 21s infinite, chroma 120s infinite",
       },
       boxShadow: {
-        "default": "0 0px 25px 0px rgb(50, 50, 50, 0.3)",
+        "default": "0 0px 25px 0px rgb(50, 50, 50, 0.4)",
         "default-sm": "0 0px 4px 0px rgb(35, 35, 35, 0.3)",
       },
     },
