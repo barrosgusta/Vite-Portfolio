@@ -7,8 +7,8 @@ import { AnimatePresence } from "framer-motion";
 
 export const routes = [
     { path: "/home", element: <HomeContent /> },
-    { path: "/resume", element: <ResumeContent /> },
-    { path: "/portfolio", element: <PortfolioContent /> },
+    { path: "/professional", element: <ResumeContent /> },
+    { path: "/projects", element: <PortfolioContent /> },
     { path: "/contact", element: <ContactContent /> },
 ];
 
