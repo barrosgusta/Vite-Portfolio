@@ -11,11 +11,11 @@ export default function WindowGlass({children, className}: WindowGlassProps) {
         <div 
             className={cn(
                 "backdrop-blur-lg",
-                "backdrop-saturate-200",
-                "dark:backdrop-saturate-100",
+                // "backdrop-saturate-200",
+                // "dark:backdrop-saturate-100",
                 "backdrop-brightness-150",
-                "backdrop-contrast-125",
-                "dark:backdrop-contrast-100",
+                // "backdrop-contrast-125",
+                // "dark:backdrop-contrast-100",
                 "rounded-xl",
                 "bg-zinc-100/60",
                 "border-2",
