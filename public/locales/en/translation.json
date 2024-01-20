@@ -1,0 +1,155 @@
+{
+    "tech" : {
+        "reactjs": "JavaScript Library",
+        "nestjs": "Node.js Framework",
+        "nextjs": "React Framework",
+        "javascript": "High-level interpreted language",
+        "typescript": "Typed JavaScript",
+        "docker": "Virtualization Platform",
+        "python": "High-level language",
+        "delphi": "Desktop Development",
+        "mongodb": "Non-relational database",
+        "postgresql": "Relational database",
+        "php": "Backend Web Language",
+        "nodejs": "JavaScript Runtime",
+        "shadcnui": "React Components Library",
+        "radixui": "React Components Library",
+        "tailwindcss": "CSS Classes Library",
+        "openai": "Artificial Intelligence API",
+        "supabase": "Development Platform",
+        "stripe": "Payments Platform",
+        "mysql": "Relational database",
+        "swift": "Native Apple Language",
+        "prisma": "DB ORM",
+        "rust": "Language focused on safety"
+    },
+    "splashScreen" : {
+        "title": "Welcome 😁",
+        "button": "Enter"
+    },
+    "sideBar": {
+        "role" : "Developer"
+    },
+    "navBar": {
+        "home": "Home",
+        "professional": "Professional",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "homePage" : {
+        "title": "Introduction",
+        "subtitle": "Hello, meet your next <strong>Full Stack Developer/Programmer</strong>",
+        "content": {
+            "p1": "As a technology lover since childhood, I found my passion for programming and am determined to succeed in my career.",
+            "p2": "Since I was little, I was always curious to know how things worked. This curiosity led me to study technology and later fall in love with programming.",
+            "p3": "My first contact with programming was when I learned to create modifications for games I liked. It was a challenging process, but very rewarding. I realized it wasn't just about technical skills, but also about creativity.",
+            "p4": "With every project I finished, I felt great pleasure and pride. It was like learning a new song on the piano. With every new chord I learned, I expanded my knowledge and my ability to create.",
+            "p5": "I am a fast learner. Everyone I have worked with praises me for this.",
+            "p6": "Currently, I am super dedicated to having expertise in everything the current market asks for. I am confident that with my knowledge and my learning ability, I will be able to achieve my professional goals."
+        },
+        "subtitle2": "Technologies that I use or have had to use:"
+    },
+    "professionalPage" : {
+        "title": "Resume",
+        "experienceSubtitle": "Experience",
+        "experience" : {
+            "ipm" : {
+                "title": "IPM Systems | Developer",
+                "date": "October 2022 — July 2023",
+                "description": {
+                    "p1": "My goal was the maintenance and development of the database migration software used at IPM Systems.",
+                    "p2": "In this project, I contributed with several performance and usability improvements, in addition to implementing new features to facilitate migrations.",
+                    "p3": "The technologies used were: <strong>Borland Delphi, Redis, MongoDB, PostgreSQL + PL/pgSQL, SqlDbx</strong>(<strong>MySQL, Oracle, Sybase</strong> etc…)."
+                }
+            },
+            "freelance" : {
+                "title": "Freelance | Full Stack Developer",
+                "date": "September 2023 — Present",
+                "description": {
+                    "p1": "Currently, I dedicate myself to gaining experience. My projects are developed using CI/CD pipelines and creating Automated Tests to meet current industry standards.",
+                    "p2": "The technologies I am using are: <strong>React.js, Next.js, Jest, Node.js, Restful APIs, Relational and non-relational databases</strong>."
+                }
+            }
+        },
+        "educationSubtitle": "Education",
+        "university" : {
+            "title": "Unidavi | Information Systems",
+            "date": "March 2022 - December 2025",
+            "description": {
+                "p1": "Motivated IT university student, with a solid technical foundation, passion for continuous learning and commitment to keeping up with emerging industry trends.",
+                "p2": "Strong teamwork and communication skills. Seeking opportunities to apply classroom learning to drive technological advances and contribute to organizational success."
+            }
+        },
+        "coursesSubtitle": "Courses",
+        "course" : {
+            "click" : {
+                "title": "Click | Computer Assembly and Maintenance + Networks",
+                "date": "February 2016 — December 2016"
+            },
+            "knn" : {
+                "title": "KNN Languages | Intermediate English <strong>(Talking, Writing, Reading, Listening)</strong>",
+                "date": "July 2019 — August 2021"
+            },
+            "ipm" : {
+                "title": "IPM Systems | Delphi <strong>(Programming Logic, Database, Components, OOP)</strong>",
+                "date": "August 2022 — September 2022"
+            }
+        }
+    },
+    "projectPage" : {
+        "tech" : "Technologies",
+        "project" : {
+            "projetoClassificado" : {
+                "title": "Classified Project",
+                "description": "Fullstack project of a responsive car sales website with emphasis on modified cars or project cars. The entire database modeling was created with Prisma ORM, API routes by Next.js API Routes, authentication with Clerk, integration with Stripe for payments, integration with Cloudinary for image storage, registration with description in Markdown, and much more. External APIs were also used for integration with the FIPE table."
+            },
+            "jornadaDoHeroi" : {
+                "title": "Hero's Journey",
+                "description": "Challenge created by the Azapfy development team. Developed in Next.js, TailwindCSS and Shadcn/UI. In this project, the API provided for the listing of characters was used."
+            },
+            "chatbotAi" : {
+                "title": "ChatBot AI",
+                "description": "ChatBot made in Next.js using TailwindCSS and Shadcn/UI. In this project, the OpenAI API was used as the basis for the development of the ChatBot."
+            },
+            "spotifyClone" : {
+                "title": "Spotify Clone",
+                "description": [
+                    "Spotify clone made in Next.js using TailwindCSS, Supabase, Stripe, Radix and PostgreSQL.",
+                    "An audio library (Tone.js) was also used for the use of reverb effects and pitch change according to the speed at which the audio plays. If you want to test, inform the login and password: <strong>test@test.com</strong> / <strong>test</strong>"
+                ]
+            },
+            "ecommerceAdmin" : {
+                "title": "E-commerce Admin",
+                "description": "Web application for managing e-commerce stores with restful API routes for integration with stores."
+            },
+            "ecommerceStore" : {
+                "title": "E-commerce Store",
+                "description": "E-commerce web application where the API routes of the <strong>E-Commerce Admin</strong> were used."
+            },
+            "truco" : {
+                "title": "Truco",
+                "description": "Truco game made in Delphi 7."
+            },
+            "brasileiraoManager" : {
+                "title": "Brasileirão Manager",
+                "description": "Championship manager with a focus on Brasileirão made in Pascal using Pascalzim. In this project, data structure concepts such as stack, queue and list were applied, as well as the use of pointers."
+            }
+        },
+        "subtitle": "Other projects that I have done but are not on GitHub:",
+        "content": "Clone of NotePad++, Physics Simulator with an interactive object on the screen, Task Manager for internal use in the company where I worked, Pong Game, Number Converter (Hex, Octal...), Morse Code Converter, BrainF*ck Interpreter, all developed in Borland Delphi 7 and PostgreSQL database."
+    },
+    "contactPage" : {
+        "title": "Contact",
+        "subtitle": "Contact form",
+        "input" : {
+            "fullName" : "Full Name",
+            "email" : "E-Mail",
+            "message" : "Your Message"
+        },
+        "button" : {
+            "send" : "Send",
+            "success" : "Sent successfully!",
+            "error" : "An error occurred, please try again later."
+        }
+    }
+}

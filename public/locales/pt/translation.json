@@ -1,0 +1,155 @@
+{
+    "tech" : {
+        "reactjs": "Biblioteca JavaScript",
+        "nestjs": "Framework Node.js",
+        "nextjs": "Framework React",
+        "javascript": "Linguagem interpretada de alto nível",
+        "typescript": "JavaScript tipado",
+        "docker": "Plataforma de virtualização",
+        "python": "Linguagem alto nível",
+        "delphi": "Desenvolvimento Desktop",
+        "mongodb": "Banco de dados não relacional",
+        "postgresql": "Banco de dados relacional",
+        "php": "Linguagem Backend Web",
+        "nodejs": "Runtime JavaScript",
+        "shadcnui": "Biblioteca de componentes React",
+        "radixui": "Biblioteca de componentes React",
+        "tailwindcss": "Biblioteca de classes CSS",
+        "openai": "API de inteligência artificial",
+        "supabase": "Plataforma de desenvolvimento",
+        "stripe": "Plataforma de pagamentos",
+        "mysql": "Banco de dados relacional",
+        "swift": "Linguagem nativa Apple",
+        "prisma": "DB ORM",
+        "rust": "Linguagem com foco em segurança"
+    },
+    "splashScreen" : {
+        "title": "Bem vindo(a) 😁",
+        "button": "Entrar"
+    },
+    "sideBar": {
+        "role" : "Desenvolvedor"
+    },
+    "navBar": {
+        "home": "Início",
+        "professional": "Profissional",
+        "projects": "Projetos",
+        "contact": "Contato"
+    },
+    "homePage" : {
+        "title": "Introdução",
+        "subtitle": "Olá, conheça seu próximo <strong>Desenvolvedor/Programador Full Stack</strong>",
+        "content": {
+            "p1": "Como um amante de tecnologia desde a infância, encontrei minha paixão por programação e estou determinado a ter sucesso na carreira.",
+            "p2": "Desde pequeno, sempre tive curiosidade em saber como as coisas funcionavam. Essa curiosidade me levou a estudar tecnologia e, mais tarde, a me apaixonar por programação.",
+            "p3": "Meu primeiro contato com a programação foi quando aprendi a criar modificações para jogos que eu gostava. Foi um processo desafiador, mas muito gratificante. Percebi que não era só sobre habilidades técnicas, mas também sobre criatividade.",
+            "p4": "A cada projeto que terminava, sentia um grande prazer e orgulho. Era como aprender uma nova música no piano. A cada novo acorde que aprendia, ampliava meu conhecimento e minha capacidade de criar.",
+            "p5": "Sou uma pessoa que aprende rápido. Todos com quem já trabalhei me elogiam por isso.",
+            "p6": "Atualmente, estou super dedicado a ter a expertise em tudo que o mercado atual pede. Estou confiante de que, com meu conhecimento e minha capacidade de aprendizado, serei capaz de alcançar meus objetivos profissionais."
+          },
+        "subtitle2": "Tecnologias que eu utilizo ou já tive que utilizar:"
+    },
+    "professionalPage" : {
+        "title": "Currículo",
+        "experienceSubtitle": "Experiência",
+        "experience" : {
+            "ipm" : {
+                "title": "IPM Sistemas | Desenvolvedor",
+                "date": "Outubro de 2022 — Julho de 2023",
+                "description": {
+                    "p1": "Meu objetivo era a manutenção e o desenvolvimento do software de migração de banco de dados utilizado na IPM Sistemas.",
+                    "p2": "Neste projeto eu contribui com diversas melhorias de desempenho e usabilidade além de implementar novas funcionalidades para facilitar as migrações.",
+                    "p3": "As tecnologias utilizadas eram: <strong>Borland Delphi, Redis, MongoDB, PostgreSQL + PL/pgSQL, SqlDbx</strong>(<strong>MySQL, Oracle, Sybase</strong> etc…)."
+                }
+            },
+            "freelance" : {
+                "title": "Freelance | Desenvolvedor Full Stack",
+                "date": "Setembro de 2023 — Até o momento",
+                "description": {
+                    "p1": "Atualmente, me dedico a ganhar experiência. Meus projetos são desenvolvidos usando pipelines de CI/CD e criando Testes Automatizados para atender aos padrões atuais do setor.",
+                    "p2": "As tecnologias que estou utilizando são: <strong>React.js, Next.js, Jest, Node.js, API \"s Restful, Bancos de dados relacionais e não relacionais</strong>."
+                }
+            }
+        },
+        "educationSubtitle": "Educação",
+        "university" : {
+            "title": "Unidavi | Sistemas de Informação",
+            "date": "Março de 2022 - Dezembro de 2025",
+            "description": {
+                "p1": "Estudante universitário de TI motivado, com uma base técnica sólida, paixão pelo aprendizado contínuo e compromisso em manter-se atualizado com as tendências emergentes do setor.",
+                "p2": "Forte capacidade de trabalho em equipe e de comunicação. Buscando oportunidades de aplicar o aprendizado em sala de aula para impulsionar os avanços tecnológicos e contribuir para o sucesso organizacional."
+            }
+        },
+        "coursesSubtitle": "Cursos",
+        "course" : {
+            "click" : {
+                "title": "Click | Montagem e Manutenção de Computadores + Redes",
+                "date": "Fevereiro de 2016 — Dezembro de 2016"
+            },
+            "knn" : {
+                "title": "KNN Idiomas | Inglês Intermediário <strong>(Talking, Writing, Reading, Listening)</strong>",
+                "date": "Julho de 2019 — Agosto de 2021"
+            },
+            "ipm" : {
+                "title": "IPM Sistemas | Delphi <strong>(Lógica de Programação, Banco de Dados, Componentes, POO)</strong>",
+                "date": "Agosto de 2022 — Setembro de 2022"
+            }
+        }
+    },
+    "projectPage" : {
+        "tech" : "Tecnologias",
+        "project" : {
+            "projetoClassificado" : {
+                "title": "Projeto Classificado",
+                "description": "Projeto fullstack de um site responsivo de venda de carros com enfase em carros modificados ou carros projeto. Foi criado toda a modelagem do banco com o Prisma ORM, rotas API pelo Next.js API Routes, autenticação com Clerk, integração com o Stripe para pagamentos, integração com o Cloudinary para armazenamento das imagens, cadastro com descrição em Markdown, e muito mais. Foi utilizado também API's externas para integração com a tabela FIPE."
+            },
+            "jornadaDoHeroi" : {
+                "title": "Jornada do Herói",
+                "description": "Desafio criado pela equipe de desenvolvimento da Azapfy. Desenvolvido em Next.js, TailwindCSS e Shadcn/UI. Neste projeto foi utilizado a API disponibilizada para a listagem dos personagens."
+            },
+            "chatbotAi" : {
+                "title": "ChatBot AI",
+                "description": "ChatBot feito em Next.js utilizando TailwindCSS e Shadcn/UI. Neste projeto foi utilizado a API da OpenAI e usado-a como base para o desenvolvimento do ChatBot."
+            },
+            "spotifyClone" : {
+                "title": "Spotify Clone",
+                "description": [
+                    "Clone do Spotify feito em Next.js utilizando TailwindCSS, Supabase, Stripe, Radix e PostgreSQL.",
+                    "Também foi utilizado uma biblioteca de audio (Tone.js) para o uso dos efeitos de reverberação e alteração de pitch conforme a velocidade que o audio toca. Caso queira testar, informe o login e senha: <strong>test@test.com</strong> / <strong>test</strong>"
+                ]
+            },
+            "ecommerceAdmin" : {
+                "title": "E-commerce Admin",
+                "description": "Aplicação web de gerenciamento de lojas e-commerce com rotas API restful para integração com as lojas."
+            },
+            "ecommerceStore" : {
+                "title": "E-commerce Store",
+                "description": "Aplicação web de e-commerce aonde foi utilizado as rotas API do <strong>E-Commerce Admin</strong>."
+            },
+            "truco" : {
+                "title": "Truco",
+                "description": "Jogo de Truco feito em Delphi 7."
+            },
+            "brasileiraoManager" : {
+                "title": "Brasileirão Manager",
+                "description": "Gerenciador de campeonatos com foco no Brasileirão feito em Pascal utilizando o Pascalzim. Neste projeto foi aplicando conceitos de estrutura de dados como pilha, fila e lista, assim como a utilização de ponteiros."
+            }
+        },
+        "subtitle": "Outros projetos que já fiz porém não estão no GitHub:",
+        "content": "Clone do NotePad++, Simulador de Física com um objeto interativo na tela, Gerenciador de Chamados para uso interno na empresa em que trabalhava, Jogo Pong, Conversor de Números (Hex, Octal...), Conversor de Código Morse, Interpretador BrainF*ck, todos desenvolvidos no Borland Delphi 7 e banco PostgreSQL."
+    },
+    "contactPage" : {
+        "title": "Contato",
+        "subtitle": "Formulário de contato",
+        "input" : {
+            "fullName" : "Nome Completo",
+            "email" : "E-Mail",
+            "message" : "Sua Mensagem"
+        },
+        "button" : {
+            "send" : "Enviar",
+            "success" : "Enviado com sucesso",
+            "error" : "Erro ao enviar"
+        }
+    }
+}
