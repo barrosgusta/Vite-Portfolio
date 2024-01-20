@@ -6,20 +6,12 @@ import { ThemeToggle } from "@/components/theme-toogle";
 import { LangChange } from "./components/lang-change";
 import { SplashScreen } from "./components/splash-screen";
 import Cookies from 'js-cookie';
-import { signal } from "@preact/signals-react"
-import { useTranslation } from "react-i18next";
 
 export default function AppPage() {
   let alreadyVisited = Cookies.get('alreadyVisited');
   let showSplashScreen = false;
-  // const { t } = useTranslation();
-
-  const reactjstech = signal("tech.reactjs");
-  reactjstech.value = "teste";
-  console.log(reactjstech.value, "reactjstech");
-
+  
   alreadyVisited ? showSplashScreen = false : showSplashScreen = true;
-
 
   return (
     <>
