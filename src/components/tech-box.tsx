@@ -1,7 +1,7 @@
 import { TextBox } from "@/components/text-box";
 import { faReact } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { BiLogoJavascript, BiLogoTypescript, BiLogoDocker, BiLogoPython, BiLogoMongodb, BiLogoPostgresql, BiLogoPhp, BiLogoNodejs, BiLogoTailwindCss } from "react-icons/bi";
+import { BiLogoJavascript, BiLogoTypescript, BiLogoDocker, BiLogoPython, BiLogoMongodb, BiLogoPostgresql, BiLogoNodejs, BiLogoTailwindCss } from "react-icons/bi";
 import { SiNextdotjs, SiDelphi, SiPrisma, SiNestjs, SiPhp } from "react-icons/si";
 import { TbBrandMysql, TbBrandRadixUi, TbBrandRust, TbBrandStripe, TbBrandSwift } from "react-icons/tb";
 import { RiOpenaiFill, RiSupabaseLine } from "react-icons/ri";
