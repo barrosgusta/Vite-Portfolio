@@ -1,6 +1,11 @@
+import { cn } from "@/lib/utils";
+import { useTheme } from "@/providers/theme-provider";
+
 export default function Background() {
+    const { theme } = useTheme();
+    
     return (
-        <div className="z-0 fixed bg-indigo-50 dark:bg-indigo-950 w-screen h-screen transition-colors duration-75 overflow-y-auto">
+        <div className={cn("z-0 fixed bg-indigo-50 dark:bg-indigo-950 w-screen h-screen transition-colors overflow-y-auto", theme == "light" && "animate-bg-breathe-blur")}>
             <div className="z-10 overflow-y-auto">
                 <svg id="visual" viewBox="0 0 960 540" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1" className="bg-cover fixed top-0 z-0">
                     <path d="M0 358L20 362.5C40 367 80 376 120 391.7C160 407.3 200 429.7 240 423.8C280 418 320 384 360 378C400 372 440 394 480 398C520 402 560 388 600 367C640 346 680 318 720 329.5C760 341 800 392 840 392C880 392 920 341 940 315.5L960 290L960 0L940 0C920 0 880 0 840 0C800 0 760 0 720 0C680 0 640 0 600 0C560 0 520 0 480 0C440 0 400 0 360 0C320 0 280 0 240 0C200 0 160 0 120 0C80 0 40 0 20 0L0 0Z" className="fill-indigo-500 dark:fill-indigo-500 animate-bg-breathe-1"></path>
