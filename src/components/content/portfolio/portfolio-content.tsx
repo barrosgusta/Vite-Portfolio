@@ -3,9 +3,140 @@ import { ImageMiniature } from "../../image-miniature/index.tsx";
 import { PillSeparator } from "../../pill-separator.tsx";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { Project, projects } from "./projects.tsx";
+import { ProjetoClassificadoImages, ChatbotAIImages, SpotifyCloneImages, YourEcommerceAdminImages, YourEcommerceStoreImages, TrucoGameImages, BrasileiraoManagerImages, JornadaDoHeroiImages } from "@/components/content/portfolio/images";
+import TechBoxes from "@/components/tech-box";
+import { ReactNode } from "react";
+import { useTranslation } from "react-i18next";
+
+export type Project = {
+    title: string,
+    description: ReactNode,
+    techBoxes?: ReactNode,
+    imagesSource: string[],
+    projectUrl?: string,
+    siteUrl?: string
+};
     
 export function PortfolioContent() {
+    const { t } = useTranslation(); 
+    const projects: Project[] = [
+        {
+            title: t("projectPage.project.projetoClassificado.title"),
+            description: t("projectPage.project.projetoClassificado.description"),
+            techBoxes: (
+                <>
+                    <TechBoxes.NextJs />
+                    <TechBoxes.ReactJs />
+                    <TechBoxes.Prisma />
+                    <TechBoxes.TypeScript />
+                    <TechBoxes.ShadcnUi />
+                    <TechBoxes.TailwindCss />
+                    <TechBoxes.Stripe />
+                    <TechBoxes.MySql />
+                </>
+            ),
+            imagesSource: ProjetoClassificadoImages,
+            siteUrl: "https://projetoclassificado.vercel.app"
+        },
+        {
+            title: t("projectPage.project.jornadaDoHeroi.title"),
+            description: t("projectPage.project.jornadaDoHeroi.description"),
+            techBoxes: (
+                <>
+                    <TechBoxes.NextJs />
+                    <TechBoxes.ReactJs />
+                    <TechBoxes.TypeScript />
+                    <TechBoxes.ShadcnUi />
+                    <TechBoxes.TailwindCss />
+                </>
+            ),
+            imagesSource: JornadaDoHeroiImages,
+            siteUrl: "https://jornada-do-heroi-azapfy.vercel.app",
+            projectUrl: "https://github.com/barrosgusta/jornada_do_heroi-azapfy"
+        },
+        {
+            title: t("projectPage.project.chatbotAi.title"),
+            description: t("projectPage.project.chatbotAi.description"),
+            techBoxes: (
+                <>
+                    <TechBoxes.ReactJs />
+                    <TechBoxes.NextJs />
+                    <TechBoxes.TypeScript />
+                    <TechBoxes.ShadcnUi />
+                    <TechBoxes.TailwindCss />
+                    <TechBoxes.OpenAi />
+                </>
+            ),
+            imagesSource: ChatbotAIImages,
+            projectUrl: "https://github.com/barrosgusta/chatbot_ai"
+        },
+        {
+            title: t("projectPage.project.spotifyClone.title"),
+            description: t("projectPage.project.spotifyClone.description"),
+            techBoxes: (
+                <>
+                    <TechBoxes.ReactJs />
+                    <TechBoxes.NextJs />
+                    <TechBoxes.TypeScript />
+                    <TechBoxes.TailwindCss />
+                    <TechBoxes.Supabase />
+                    <TechBoxes.Stripe />
+                    <TechBoxes.RadixUi />
+                    <TechBoxes.PostgreSql />
+                </>
+            ),
+            imagesSource: SpotifyCloneImages,
+            projectUrl: "https://github.com/barrosgusta/spotify-clone",
+            siteUrl: "https://spotify-clone-beta-ecru.vercel.app"
+        },
+        {
+            title: t("projectPage.project.ecommerceAdmin.title"),
+            description: t("projectPage.project.ecommerceAdmin.description"),
+            techBoxes: (
+                <>
+                    <TechBoxes.Stripe />
+                    <TechBoxes.ReactJs />
+                    <TechBoxes.NextJs />
+                    <TechBoxes.TypeScript />
+                    <TechBoxes.TailwindCss />
+                    <TechBoxes.ShadcnUi />
+                </>
+            ),
+            imagesSource: YourEcommerceAdminImages,
+            projectUrl: "https://github.com/barrosgusta/your-ecommerce-admin",
+        },
+        {
+            title: t("projectPage.project.ecommerceStore.title"),
+            description: t("projectPage.project.ecommerceStore.description"),
+            techBoxes: (
+                <>
+                    <TechBoxes.ReactJs />
+                    <TechBoxes.NextJs />
+                    <TechBoxes.TypeScript />
+                    <TechBoxes.TailwindCss />
+                    <TechBoxes.ShadcnUi />
+                </>
+            ),
+            imagesSource: YourEcommerceStoreImages,
+            projectUrl: "https://github.com/barrosgusta/your-ecommerce-store",
+        },
+        {
+            title: t("projectPage.project.truco.title"),
+            description: t("projectPage.project.truco.description"),
+            techBoxes: (
+                <TechBoxes.Delphi />
+            ),
+            imagesSource: TrucoGameImages,
+            projectUrl: "https://github.com/barrosgusta/delphi-truco"
+        },
+        {
+            title: t("projectPage.project.brasileiraoManager.title"),
+            description: t("projectPage.project.brasileiraoManager.description"),
+            imagesSource: BrasileiraoManagerImages,
+            projectUrl: "https://github.com/barrosgusta/brasileirao_manager"
+        },
+    ];
+
     const [isOpen, setIsOpen] = useState(false);
     const [project, setProject] = useState<Project>(projects[0]);
 
@@ -67,8 +198,12 @@ export function PortfolioContent() {
             <PillSeparator className="m-6 w-auto" />
 
             <section className="text-zinc-700 dark:text-zinc-200 text-left">
-                <h2 className="font-bold text-lg mb-2">Outros projetos que já fiz porém não estão no GitHub:</h2> 
-                <p>Clone do NotePad++, Semi-Simulador de Física com um objeto interativo na tela, Gerenciador de Chamados para uso interno na empresa em que trabalhava, Jogo Pong, Conversor de Números (Hex, Octal...), Conversor de Código Morse, Interpretador BrainF*ck, todos desenvolvidos no Borland Delphi 7 e banco PostgreSQL.</p>
+                <h2 className="font-bold text-lg mb-2">
+                    {t("projectPage.subtitle")}
+                </h2> 
+                <p>
+                    {t("projectPage.content")}
+                </p>
             </section>
         </div>
         </motion.div>       

@@ -5,6 +5,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { PillSeparator } from "./pill-separator";
 import { IconFrame } from "./icon-frame";
 import { GithubIcon, Globe2 } from "lucide-react";
+import i18n from "@/lib/i18n";
 
 type ProjectModalProps = {
     imagesSource: string[];
@@ -45,7 +46,7 @@ export function ProjectModalTechnologies({ children }: { children: ReactNode }) 
             <div className="p-4">
                 <div className="">
                     <h3 className="text-lg text-center font-bold leading-none dark:text-white">
-                        Tecnologias
+                        {i18n.t("projectPage.tech")}
                     </h3>
                 </div>
                 <PillSeparator className="mt-3 mb-1" />

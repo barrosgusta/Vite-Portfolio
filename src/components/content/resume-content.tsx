@@ -3,8 +3,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { PillSeparator } from "../pill-separator";
 import { IconFrame } from "../icon-frame";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export function ResumeContent() {
+    const { t } = useTranslation();
+
     return (
         <motion.div
             initial={{ opacity: 0 }}
@@ -16,7 +19,7 @@ export function ResumeContent() {
             <div className="grid place-content-start">
                 <div className="grid">
                     <h1 className="text-zinc-700 dark:text-zinc-100 text-3xl font-bold">
-                        Currículo
+                        {t("professionalPage.title")}
                     </h1>
                     <PillSeparator className="my-3" />
                 </div>
@@ -25,7 +28,9 @@ export function ResumeContent() {
             <section className="text-zinc-700 dark:text-zinc-300 relative">
                 <div className="flex items-center">
                     <IconFrame icon={<FontAwesomeIcon icon={faSuitcase} />} />
-                    <h3 className="font-semibold text-xl">Expreriência</h3>
+                    <h3 className="font-semibold text-xl">
+                        {t("professionalPage.experienceSubtitle")}
+                    </h3>
                 </div>
 
                 <div className="absolute border-2 rounded-xl left-[1.90em] h-[calc(100%-60px)] border-zinc-500 dark:border-zinc-200 shadow-md">
@@ -33,38 +38,44 @@ export function ResumeContent() {
 
                 <ul className="ml-[2.92rem]">
                     <li className="mb-3">
-                        <h4 className="font-semibold text-xl">IPM Sistemas | Desenvolvedor</h4>
+
+                        <h4 className="font-semibold text-xl">
+                            {t("professionalPage.experience.ipm.title")}
+                        </h4>
+
                         <span className="opacity-70 text-xs uppercase">
-                            Outubro de 2022 — Julho de 2023
+                            {t("professionalPage.experience.ipm.date")}
                         </span>
 
                         <div className="flex flex-col mt-2 gap-y-1 text-lg">
                             <p>
-                                Meu objetivo era a manutenção e o desenvolvimento do software de migração de banco de dados utilizado na IPM Sistemas.
+                                {t("professionalPage.experience.ipm.description.p1")}
                             </p>
                             <p>
-                                Neste projeto eu contribui com diversas melhorias de desempenho e usabilidade além de implementar novas funcionalidades para facilitar as migrações.
+                                {t("professionalPage.experience.ipm.description.p2")}
                             </p>
-                            <p>
-                            As tecnologias utilizadas eram: <strong>Borland Delphi, Redis, MongoDB, PostgreSQL + PL/pgSQL, SqlDbx</strong>(<strong>MySQL, Oracle, Sybase</strong> etc…).
-                            </p>
+                            <p dangerouslySetInnerHTML={
+                                {__html: t("professionalPage.experience.ipm.description.p3")}
+                            }/>      
                         </div>
 
                     </li>
 
                     <li className="mb-3">
-                        <h4 className="font-semibold text-xl">Freelance | Full-Stack WEB Developer</h4>
+                        <h4 className="font-semibold text-xl">
+                            {t("professionalPage.experience.freelance.title")}
+                        </h4>
                         <span className="opacity-70 text-xs uppercase">
-                            Setembro de 2023 — Até o momento
+                            {t("professionalPage.experience.freelance.date")}
                         </span>
 
                         <div className="flex flex-col mt-2 gap-y-1 text-lg">
                             <p>
-                                Atualmente, me dedico a ganhar experiência. Meus projetos são desenvolvidos usando pipelines de CI/CD e criando Testes Automatizados para atender aos padrões atuais do setor.
+                                {t("professionalPage.experience.freelance.description.p1")}
                             </p>
-                            <p>
-                                As tecnologias que estou utilizando são: <strong>React.js, Next.js, Jest, Node.js, API "s Restful, Bancos de dados relacionais e não relacionais</strong>.
-                            </p>
+                            <p dangerouslySetInnerHTML={
+                                {__html: t("professionalPage.experience.freelance.description.p2")}
+                            }/>
                         </div>
 
                     </li>
@@ -74,7 +85,9 @@ export function ResumeContent() {
             <section className="mt-1 text-zinc-700 dark:text-zinc-300 relative">
                 <div className="flex items-center">
                     <IconFrame icon={<FontAwesomeIcon icon={faBook} />} />
-                    <h3 className="font-semibold text-xl">Educação</h3>
+                    <h3 className="font-semibold text-xl">
+                        {t("professionalPage.educationSubtitle")}
+                    </h3>
                 </div>
 
                 <div className="absolute border-2 rounded-xl left-[1.90em] h-[calc(100%-60px)] border-zinc-500 dark:border-zinc-200 shadow-md">
@@ -82,18 +95,20 @@ export function ResumeContent() {
 
                 <ul className="ml-[2.92rem]">
                     <li className="mb-3">
-                        <h4 className="font-semibold text-xl">Unidavi | Sistemas de Informação</h4>
+                        <h4 className="font-semibold text-xl">
+                            {t("professionalPage.university.title")}
+                        </h4>
 
                         <span className="opacity-70 text-xs uppercase">
-                            Março de 2022 - Dezembro de 2025
+                            {t("professionalPage.university.date")}
                         </span>
                         
                         <div className="flex flex-col mt-2 gap-y-1 text-lg">
                             <p>
-                                Estudante universitário de TI motivado, com uma base técnica sólida, paixão pelo aprendizado contínuo e compromisso em manter-se atualizado com as tendências emergentes do setor.
+                                {t("professionalPage.university.description.p1")}
                             </p>
                             <p> 
-                                Forte capacidade de trabalho em equipe e de comunicação. Buscando oportunidades de aplicar o aprendizado em sala de aula para impulsionar os avanços tecnológicos e contribuir para o sucesso organizacional.
+                                {t("professionalPage.university.description.p2")}
                             </p>
                         </div>
                       
@@ -104,7 +119,9 @@ export function ResumeContent() {
             <section className="mt-1 text-zinc-700 dark:text-zinc-300 relative">
                 <div className="flex items-center">
                     <IconFrame icon={<FontAwesomeIcon icon={faBook} />} />
-                    <h3 className="font-semibold text-xl">Cursos</h3>
+                    <h3 className="font-semibold text-xl">
+                        {t("professionalPage.coursesSubtitle")}
+                    </h3>
                 </div>
 
                 <div className="absolute border-2 rounded-xl left-[1.90em] h-[calc(100%-60px)] border-zinc-500 dark:border-zinc-200 shadow-md">
@@ -112,16 +129,30 @@ export function ResumeContent() {
                 
                 <ul className="ml-[2.92rem]">
                     <li className="mb-3">
-                        <h4 className="font-semibold text-lg">Click | Montagem e Manutenção de Computadores</h4>
-                        <span className="opacity-70 text-xs uppercase">Fevereiro de 2016 — Dezembro de 2016</span>
+                        <h4 className="font-semibold text-lg">
+                            {t("professionalPage.course.click.title")}
+                        </h4>
+                        <span className="opacity-70 text-xs uppercase">
+                            {t("professionalPage.course.click.date")}
+                        </span>
                     </li>
                     <li className="mb-3">
-                        <h4 className="font-semibold text-lg">KNN Idiomas | Inglês</h4>
-                        <span className="opacity-70 text-xs uppercase">Julho de 2019 — Agosto de 2021</span>
+                        <h4 className="font-semibold text-lg" dangerouslySetInnerHTML={
+                            {__html: t("professionalPage.course.knn.title")}
+                        }/>
+
+                        <span className="opacity-70 text-xs uppercase">
+                            {t("professionalPage.course.knn.date")}
+                        </span>
                     </li>  
                     <li className="mb-3">
-                        <h4 className="font-semibold text-lg">IPM Sistemas | Delphi</h4>
-                        <span className="opacity-70 text-xs uppercase">Agosto de 2022 — Setembro de 2022</span>
+                        <h4 className="font-semibold text-lg" dangerouslySetInnerHTML={
+                            {__html: t("professionalPage.course.ipm.title")}
+                        }/>
+                            
+                        <span className="opacity-70 text-xs uppercase">
+                            {t("professionalPage.course.ipm.date")}
+                        </span>
                     </li>                    
                 </ul>
 

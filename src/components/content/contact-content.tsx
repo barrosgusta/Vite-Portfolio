@@ -4,15 +4,19 @@ import { SubmitButton } from "../submit-button";
 import { Check } from "lucide-react";
 import { useState } from "react"
 import { PropagateLoader } from "react-spinners";
+import { useTranslation } from "react-i18next";
 
 export function ContactContent() {
+    const { t } = useTranslation();
+
     const [isFormSubmitted, setIsFormSubmitted] = useState(false);
     const [isFormPending, setIsFormPending] = useState(false);
-    const [submitButtonText, setSubmitButtonText] = useState("Enviar");
+    const [submitButtonText, setSubmitButtonText] = useState("");
 
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
+
 
     async function handleOnSubmit(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault(); 
@@ -29,11 +33,11 @@ export function ContactContent() {
             })
     
         } catch (error) {
-            setSubmitButtonText("Erro ao Enviar");
+            setSubmitButtonText(t("contactPage.button.error"));
             setIsFormPending(false);
         } finally {
             setIsFormPending(false);
-            setSubmitButtonText ("Mensagem Enviada!");
+            setSubmitButtonText (t("contactPage.button.success"));
             setIsFormSubmitted(true);
             clearForm();
         }
@@ -55,7 +59,7 @@ export function ContactContent() {
                 <div className="grid place-content-start">
                     <div className="grid">
                         <h1 className="text-zinc-800 dark:text-zinc-100 text-3xl font-bold">
-                            Contato
+                            {t("contactPage.title")}
                         </h1>
                         <PillSeparator className="my-3" />
                     </div>
@@ -84,7 +88,9 @@ export function ContactContent() {
 
                 <form onSubmit={handleOnSubmit} className="transition-all duration-300">
                     <div className="mb-6">
-                        <h2 className="font-bold text-zinc-800 dark:text-zinc-100 mb-2">Formulário de Contato</h2>
+                        <h2 className="font-bold text-zinc-800 dark:text-zinc-100 mb-2">
+                            {t("contactPage.subtitle")}
+                        </h2>
 
                         <div className="grid gap-x-6 gap-y-5 grid-cols-6 font-sfp">
 
@@ -94,7 +100,7 @@ export function ContactContent() {
                                         value={name}
                                         onChange={(e) => setName(e.target.value)}
                                         required
-                                        placeholder="Nome Completo"
+                                        placeholder={t("contactPage.input.fullName")}
                                         className="block w-full rounded-md p-3 text-zinc-800 shadow-sm border-zinc-300 placeholder:text-zinc-400 border-2 focus:border-indigo-600 text-sm leading-6
                                 dark:bg-zinc-800 dark:border-indigo-400 dark:text-zinc-100" />
                             </div>
@@ -105,7 +111,7 @@ export function ContactContent() {
                                         value={email}
                                         onChange={(e) => setEmail(e.target.value)}
                                         required
-                                        placeholder="E-Mail"
+                                        placeholder={t("contactPage.input.email")}
                                         className="block w-full rounded-md p-3 text-zinc-800 shadow-sm border-zinc-300 placeholder:text-zinc-400 border-2 focus:border-indigo-600 text-sm leading-6
                                 dark:bg-zinc-800 dark:border-indigo-400 dark:text-zinc-100" />
                             </div>
@@ -115,7 +121,7 @@ export function ContactContent() {
                                     name="message"
                                     value={message}
                                     onChange={(e) => setMessage(e.target.value)}
-                                    placeholder="Sua Mensagem"
+                                    placeholder={t("contactPage.input.message")}
                                     className="block w-full min-h-[100px] max-h-52 rounded-md p-3 text-zinc-800 shadow-sm border-zinc-300 placeholder:text-zinc-400 border-2 focus:border-indigo-600 text-sm dark:bg-zinc-800 dark:border-indigo-400 dark:text-zinc-100" />
                             </div>
 
@@ -128,7 +134,7 @@ export function ContactContent() {
                     >
                         {isFormPending && <PropagateLoader color="white" className="mt-1 mb-5" />}
                         {isFormSubmitted && <Check />}
-                        {submitButtonText}
+                        {submitButtonText == "" && !isFormPending ? t("contactPage.button.send") : submitButtonText}
                     </SubmitButton>
                 </form>
             </div>

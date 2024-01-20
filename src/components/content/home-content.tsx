@@ -1,8 +1,11 @@
 import TechBoxes from "@/components/tech-box";
 import { PillSeparator } from "../pill-separator";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export function HomeContent() {
+    const {t} = useTranslation();
+
     return (
         <motion.div
             initial={{ opacity: 0 }}
@@ -13,7 +16,7 @@ export function HomeContent() {
             <div className="grid place-content-start">
                 <div className="grid">
                     <h1 className="text-zinc-800 dark:text-zinc-100 text-3xl font-bold">
-                        Introdução
+                        {t("homePage.title")}
                     </h1>
                     <PillSeparator className="my-3" />
                 </div>
@@ -21,30 +24,30 @@ export function HomeContent() {
 
             <section className="text-zinc-700 dark:text-zinc-300 mt-3 text-left">
                 
-                <h2 className="font-semibold text-2xl md:text-3xl">
-                    Olá, conheça seu próximo <strong>Desenvolvedor/Programador Full Stack</strong>:
-                </h2>
+                <h2 className="font-semibold text-2xl md:text-3xl" dangerouslySetInnerHTML={
+                    {__html: t("homePage.subtitle")}
+                } />
 
                 <br />
 
                 <div className="flex flex-col gap-y-3 text-xl">
-                    <p>Como um amante de tecnologia desde a infância, encontrei minha paixão por programação e estou determinado a ter sucesso na carreira.</p>
+                    <p>{t("homePage.content.p1")}</p>
 
-                    <p>Desde pequeno, sempre tive curiosidade em saber como as coisas funcionavam. Essa curiosidade me levou a estudar tecnologia e, mais tarde, a me apaixonar por programação.</p>
+                    <p>{t("homePage.content.p2")}</p>
 
-                    <p>Meu primeiro contato com a programação foi quando aprendi a criar modificações para jogos que eu gostava. Foi um processo desafiador, mas muito gratificante. Percebi que não era só sobre habilidades técnicas, mas também sobre criatividade.</p>
+                    <p>{t("homePage.content.p3")}</p>
 
-                    <p>A cada projeto que terminava, sentia um grande prazer e orgulho. Era como aprender uma nova música no piano. A cada novo acorde que aprendia, ampliava meu conhecimento e minha capacidade de criar.</p>
+                    <p>{t("homePage.content.p4")}</p>
 
-                    <p>Sou uma pessoa que aprende rápido. Todos com quem já trabalhei me elogiam por isso.</p>
+                    <p>{t("homePage.content.p5")}</p>
 
-                    <p>Atualmente, estou super dedicado a ter a expertise em tudo que o mercado atual pede. Estou confiante de que, com meu conhecimento e minha capacidade de aprendizado, serei capaz de alcançar meus objetivos profissionais.</p>
+                    <p>{t("homePage.content.p6")}</p>
                 </div>
             </section>
 
 
             <h2 className="text-zinc-700 dark:text-zinc-100 text-2xl md:text-3xl font-bold mt-7 mb-4 text-left">
-                Tecnologias que eu utilizo ou já tive que utilizar:
+                {t("homePage.subtitle2")}
             </h2>
 
             <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-rows-2 gap-4">
